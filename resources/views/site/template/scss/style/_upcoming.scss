@@ -1,0 +1,241 @@
+/*********************************
+        Upcoming & Latest
+*********************************/
+
+.upcoming-section {
+    background: #161d4a;
+    z-index: 1;
+}
+
+.upcoming_image {
+    position: absolute;
+    bottom: -152px;
+    left: -491px;
+    z-index: -1;
+}
+
+.custom_lists_row {
+    margin-top: 63px;
+}
+
+.custom_list_a {
+    margin-top: 63px;
+}
+
+.custom_list_a ul li {
+    height: 110px;
+    background: #242b56;
+    padding-left: 25px;
+    padding-right: 29px;
+}
+
+.custom_list_a ul li:not(:last-of-type) {
+    margin-bottom: 3px;
+}
+
+.custom_list_image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 auto;
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    -o-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+.custom_list_title_container {
+    padding-left: 48px;
+    -webkit-transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    -o-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+.custom_list_title a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+
+.custom_list_title a:hover {
+    color: #ff2400;
+}
+
+.custom_list_date {
+    font-size: 11px;
+    color: #737791;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.custom_list_link {
+    width: 134px;
+    height: 43px;
+    background: #161d4a;
+    text-align: center;
+}
+
+.custom_list_link:hover {
+    background: #ff2400;
+    text-align: center;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.custom_list_link::after {
+    display: block;
+    position: absolute;
+    /*left: 0;
+    bottom: 0;*/
+    width: inherit;
+    height: 2px;
+    background: #ff2400;
+    content: '';
+    z-index: 0;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.custom_list_link a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 41px;
+    z-index: 1;
+}
+
+.custom_list_b {
+    margin-top: 63px;
+}
+
+.custom_list_b ul li {
+    height: 110px;
+    background: #242b56;
+    padding-left: 7px;
+    padding-right: 16px;
+}
+
+.custom_list_b ul li:not(:last-of-type) {
+    margin-bottom: 3px;
+}
+
+.custom_list_b ul li>div:first-of-type,
+.custom_list_b ul li>div:last-of-type {
+    width: 37%;
+}
+
+.custom_list_b ul li>div:nth-child(2) {
+    width: 26%;
+}
+
+.custom_list_b ul li>div:first-of-type .team_name {
+    margin-left: 15px;
+}
+
+.custom_list_b ul li>div:last-of-type .team_name {
+    margin-right: 15px;
+}
+
+.team_logo {
+    width: 90px;
+    height: 90px;
+}
+
+.team_logo img {
+    max-height: 100%;
+}
+
+.team_name a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.team_name a:hover {
+    color: #ff2400;
+}
+
+.custom_list_b ul li>div:nth-child(2)>div:first-child {
+    font-size: 12px;
+    font-weight: 500;
+    color: #777b95;
+}
+
+.custom_list_b ul li>div:nth-child(2)>div:nth-child(2) {
+    font-size: 30px;
+    line-height: 0.75;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.custom_list_b ul li>div:nth-child(2)>div:nth-child(3) {
+    font-size: 11px;
+    font-weight: 500;
+    color: #777b95;
+    margin-top: 17px;
+}
+
+.placar_up {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+    .custom_list_title_container {
+        padding-left: 2px;
+    }
+    .custom_list_link {
+        width: 100px;
+        a {
+            font-size: 14px;
+        }
+    }
+    .custom_list_title a {
+        font-size: 12px;
+        font-weight: 300;
+        color: #FFFFFF;
+        line-height: 1.1;
+    }
+    .custom_list_a ul {
+        padding-left: 10px;
+        li {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .custom_list_b ul {
+        padding-left: 10px;
+        li {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .team_logo img {
+        // height: 100%;
+        width: 100%;
+    }
+    .team_name a {
+        font-size: 12px;
+    }
+    .custom_list_b ul li>div:first-of-type .team_name {
+        margin-left: 5px;
+    }
+    .custom_list_b ul li>div:last-of-type .team_name {
+        margin-right: 5px;
+    }
+}

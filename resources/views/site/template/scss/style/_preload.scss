@@ -1,0 +1,96 @@
+
+    $image_large:'ink.png';
+/*********************************
+			Prelaoder
+*********************************/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    overflow: hidden;
+    /*background: $custom-color-secondary;*/
+  }
+  #preloader:before {
+    content: "";
+    position: fixed;
+    /*background-image: url(../img/preload.png);*/
+    width: 100vh;
+    height: 100vh;
+  }
+  #preloader-fixo{
+    content: "";
+    position: fixed;
+    top: calc(50% - 12.5vh);
+    left: calc(50% - 12.5vh);
+    width: 25vh;
+    height: 25vh;
+  }
+
+  .preloader-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      z-index: 10000;
+      visibility: hidden;
+      overflow: hidden;
+  }
+
+  .preloader-background .bg-layer {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateY(-50%) translateX(-2%);
+      transform: translateY(-50%) translateX(-2%);
+      height: 100%;
+      /* our sprite is composed of 25 frames */
+      width: 2500%;
+      z-index: 10000;
+      background: url($url+'storage/images/menu/'+$image_large) no-repeat 0 0;
+      background-size: 100% 100%;
+  }
+
+  .preloader-background.visible {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  .preloader-background.opening .bg-layer {
+      animation: cd-sequence 1.0s steps(24);
+      animation-fill-mode: forwards;
+  }
+
+  .preloader-background.closing .bg-layer {
+      animation: cd-sequence-reverse 1.0s steps(24);
+      animation-fill-mode: forwards;
+  }
+
+  .no-cssanimations .preloader-background {
+      display: none;
+  }
+
+  @keyframes cd-sequence {
+      0% {
+          transform: translateY(-50%) translateX(-2%);
+      }
+      100% {
+          transform: translateY(-50%) translateX(-98%);
+      }
+  }
+
+  @keyframes cd-sequence-reverse {
+      0% {
+
+          transform: translateY(-50%) translateX(-98%);
+      }
+      100% {
+
+          transform: translateY(-50%) translateX(-2%);
+      }
+  }

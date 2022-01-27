@@ -1,0 +1,288 @@
+/*********************************
+		Players
+*********************************/
+
+.team_small_row {
+    margin-top: 20px;
+}
+
+.team_small {
+    margin-bottom: 30px;
+}
+
+.team_small_image {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    a {
+        display: block;
+        position: relative;
+        height: 100%;
+        img {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+            &:hover {
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                transition: all 200ms ease;
+            }
+        }
+    }
+    &>div {
+        position: absolute;
+        top: 8px;
+        left: -21px;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        line-height: 54px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #ff2400;
+        background: #161d4a;
+        z-index: 1;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+    &::after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        //background: rgba(22, 29, 74, 0.75);
+        content: '';
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transition: all 200ms ease;
+        -moz-transition: all 200ms ease;
+        -ms-transition: all 200ms ease;
+        -o-transition: all 200ms ease;
+        transition: all 200ms ease;
+    }
+}
+
+.team_small_image:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.team_small_content {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+.team_small_name {
+    a {
+        font-size: 24px;
+        font-weight: 700;
+        color: #050505;
+        line-height: 1.2;
+        &:hover {
+            color: #ff2400;
+        }
+    }
+}
+
+.team_small_title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff2400;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.team_button {
+    margin-top: 40px;
+}
+
+.player {
+    background: #FFFFFF;
+    .player_image {
+        height: 80vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        overflow: hidden;
+        content: "";
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70%;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+            transition: width 0.7s ease 0s;
+            &:hover {
+                width: 90%;
+            }
+            &::after {
+                display: block;
+                position: absolute;
+                width: 90%;
+                content: '';
+                z-index: 0;
+                -webkit-transition: all 200ms ease;
+                -moz-transition: all 200ms ease;
+                -ms-transition: all 200ms ease;
+                -o-transition: all 200ms ease;
+                transition: all 200ms ease;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .team_small {
+        padding-left: 15px;
+    }
+    .team_small_image {
+        a {
+            img {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    }
+    .team_small_content {
+        padding-left: 30px;
+    }
+    .player {
+        .player_image {
+            height: 50vh;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+            overflow: hidden;
+            content: "";
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 80%;
+                transition: width 0.7s ease 0s;
+            }
+        }
+    }
+}
+
+.player_content {
+    padding-top: 92px;
+}
+
+.player_title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #888888;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 13px;
+}
+
+.player_subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #b5b5b5;
+    margin-top: 3px;
+}
+
+.player_text {
+    margin-top: 44px;
+}
+
+.player_text p:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.player_button {
+    margin-top: 60px;
+}
+
+.player_social_midia ul {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.player_social_midia ul li {
+    list-style: none;
+}
+
+.player_social_midia ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.player_social_midia ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.player_social_midia ul li a .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+
+.player_social_midia a:hover .fa-instagram {
+    color: #e4405f;
+}
+
+.player_social_midia a:hover .fa-facebook {
+    color: #3b5998;
+}
+
+.player_social_midia a:hover .fa-twitter {
+    color: #00aced;
+}
+
+.player_social_midia a:hover .fa-youtube {
+    color: #dd4b39;
+}

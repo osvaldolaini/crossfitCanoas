@@ -1,0 +1,54 @@
+$theme-colors: ( "custom": #FFA500, "custom-secondary":#fd7e14);
+@import "bootstrap/bootstrap";
+
+/*@import "template/style";*/
+
+@import 'style/fonts';
+
+/*GEREAL E HEADER*/
+
+@import 'style/general';
+@import 'style/navbarLarge';
+@import 'style/navbarSmall';
+@import 'style/subpages';
+
+/*@import 'style/toogle';*/
+
+
+/*@import 'style/header';*/
+
+
+/*Partials*/
+
+@import 'style/sections';
+@import 'style/index';
+@import 'style/counter';
+@import 'style/contacts';
+@import 'style/partners';
+
+/**Sections*/
+
+@import 'style/results';
+@import 'style/upcoming';
+@import 'style/players';
+@import 'style/staffs';
+@import 'style/stats';
+@import 'style/scoreboard';
+
+/**Artigos*/
+
+@import 'style/breakingNews';
+@import 'style/blog';
+@import 'style/articles';
+@import 'style/socialShare';
+//@import 'style/gallery';
+@import 'style/galleries';
+@import 'style/jssorCarousel';
+
+/*FOOTER*/
+
+@import 'style/preload';
+@import 'style/footer';
+@import 'style/copyright';
+@import 'style/newsletter';
+@import 'style/smokeModal';

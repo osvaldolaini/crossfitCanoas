@@ -1,0 +1,25 @@
+/*********************************
+			Fonts
+*********************************/
+
+@import url("https://fonts.googleapis.com/css?family=Arimo:400|Raleway:300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+//$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: "Raleway";
+$font-family-sans-serif-secondary: "Arimo",
+sans-serif;
+$font-family-subpage: "Merriweather";
+//$url: {{url()}};
+
+/*Font Handel
+
+@font-face {
+    font-family: "Handel";
+    src: url($url+'fonts/handel/Handel-Gothic-BT.ttf') format('truetype');
+    //src:url('{{url("fonts/handel/Handel-Gothic-BT.ttf")}}');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+$font-primary: 'Roboto',
+sans-serif;

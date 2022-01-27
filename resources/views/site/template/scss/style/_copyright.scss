@@ -1,0 +1,30 @@
+/*********************************
+		Copyright
+*********************************/
+.copyright {
+    background-color: $black;
+    padding: 20px 0;
+    font-family: "Nunito Sans", Arial, sans-serif !important;
+    p {
+        color: $white;
+        a {
+            color: $white;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+    }
+    span {
+        color: $white;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .copyright {
+        text-align: center !important;
+        span {
+            font-size: 10px;
+        }
+    }
+}
