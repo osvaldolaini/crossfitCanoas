@@ -13,22 +13,23 @@
 <title>{{$config->title}} @yield('title_postfix', config('adminlte.title_postfix', ''))</title>
 </head>
 <body >
-    {{-- Head --}}
-    @include('site.partials.head')
+    <div class="wrapper jarallax" >
+        {{-- Head --}}
+        @include('site.partials.head')
 
-    {{-- Body Content --}}
-    @yield('body')
+        {{-- Body Content --}}
+        @yield('body')
 
-    {{-- Footer --}}
-    @include('site.partials.footer')
+        {{-- Footer --}}
+        @include('site.partials.footer')
 
-    {{-- Copyright --}}
-    @include('site.partials.copyright')
+        {{-- Copyright --}}
+        @include('site.partials.copyright')
 
-    {{-- Custom Scripts --}}
-    {{--@include('site.assets.simple_js')--}}
-    @include('site.assets.js')
-
+        {{-- Custom Scripts --}}
+        {{--@include('site.assets.simple_js')--}}
+        @include('site.assets.js')
+    </div>
 </body>
 
 </html>

@@ -1,8 +1,8 @@
-$font-color: #ff2400;
-$custom-color-primary: #161d4a;
-$custom-color-secondary: #191339;
+$font-color: #FFA500;
+$custom-color-primary: #fd7e14;
+$custom-color-secondary: #FFA500;
 $tertiary: #252a2b;
-$color-hover: #ff2400;
+$color-hover: #fd7e14;
 
 /*********************************
 			Geral
@@ -13,10 +13,9 @@ html {
 }
 
 body {
-    //font-family: "Nunito Sans", Arial, sans-serif;
     font-family: $font-primary;
     background: #fff;
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 1.8;
     font-weight: 400;
     color: #666666;
@@ -67,33 +66,88 @@ h5,
         Sections
 *********************************/
 
+.wrapper {
+    /*com isso o header ficar├í sempre com o tamanho da tela */
+    background-attachment: fixed;
+    /* cover ├® para nunca deixar espa├ºo sem imagem*/
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url($url+'storage/images/site/crossfit-canoas-box.jpg');
+    height: 200vh;
+}
+
 .custom-section {
-    padding: 6em 0;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.section-services {
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.heading-section {
+    font-family: "Bebas";
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+    color: $white;
+    text-transform: uppercase;
     position: relative;
+    span {
+        color: $custom-color-secondary;
+    }
+}
+
+.heading-section-dark {
+    font-family: "Bebas";
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+    color: $black;
+    text-transform: uppercase;
+    position: relative;
+    span {
+        color: $custom-color-secondary;
+    }
+}
+
+.text-section {
+    text-align: center;
+    $font-primary: 'Roboto', sans-serif;
+    i {
+        color: $custom-color-secondary;
+    }
 }
 
 @media (max-width: 767.98px) {
     .custom-section {
         padding: 6em 0;
     }
+    .heading-section {
+        font-family: "Bebas";
+        font-size: 10em;
+    }
+    .heading-section-dark {
+        font-family: "Bebas";
+        font-size: 10em;
+    }
+    .text-section {
+        font-size: 9pt;
+    }
+    .section-services {
+        background-color: white;
+        padding: 6em 0;
+    }
 }
 
-.heading-section .subheading {
-    font-size: 18px;
-    display: inline-block;
-    margin-bottom: 0;
-    color: $custom-color-secondary;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-}
 
-.heading-section .subheading:after {
+/*.heading-section:after {
     position: absolute;
     top: 50%;
-    left: -60px;
+    left: 240px;
     content: "";
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -104,10 +158,10 @@ h5,
     background: $custom-color-secondary;
 }
 
-.heading-section .subheading:before {
+.heading-section:before {
     position: absolute;
     top: 50%;
-    right: -60px;
+    left: 240px;
     content: "";
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -116,7 +170,7 @@ h5,
     height: 1px;
     margin-top: -1px;
     background: $custom-color-secondary;
-}
+}*/
 
 .section_title h1 {
     font-size: 36px;
@@ -147,7 +201,7 @@ button:active {
     display: inline-block;
     width: 200px;
     height: 64px;
-    background: $color-hover;
+    background: $custom-color-primary;
 }
 
 .button::after {
@@ -157,7 +211,7 @@ button:active {
     //left: 0;
     width: inherit;
     height: 3px;
-    background: $custom-color-primary;
+    background: $custom-color-secondary;
     content: '';
     z-index: 0;
     -webkit-transition: all 200ms ease;
@@ -168,7 +222,7 @@ button:active {
 }
 
 .button:hover::after {
-    height: 65%;
+    height: 95%;
 }
 
 .button a {
@@ -181,4 +235,8 @@ button:active {
     font-weight: 700;
     color: #FFFFFF;
     z-index: 1;
+}
+
+.service_button {
+    width: 300px;
 }

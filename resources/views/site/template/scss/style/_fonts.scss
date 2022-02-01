@@ -9,17 +9,31 @@ $font-family-sans-serif: "Raleway";
 $font-family-sans-serif-secondary: "Arimo",
 sans-serif;
 $font-family-subpage: "Merriweather";
-//$url: {{url()}};
 
-/*Font Handel
+/*Font Bebas*/
 
 @font-face {
-    font-family: "Handel";
-    src: url($url+'fonts/handel/Handel-Gothic-BT.ttf') format('truetype');
-    //src:url('{{url("fonts/handel/Handel-Gothic-BT.ttf")}}');
+    font-family: "Bebas";
+    src: url($url+'fonts/bebas/bebasneue bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*Font Montserrat*/
+
+@font-face {
+    font-family: "Montserrat";
+    src: url($url+'fonts/montserrat/montserrat.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 
-$font-primary: 'Roboto',
+$font-primary: 'Montserrat',
+'Roboto',
 sans-serif;
+$font-bebas: 'Bebas',
+'Roboto';
+.f-bebas {
+    font-family: 'Bebas';
+}

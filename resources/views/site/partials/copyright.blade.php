@@ -1,7 +1,7 @@
 
 <div class="container-fluid">
     <div class="row text-center copyright">
-        <div class="col-lg-12">
+        <div class="col ">
             <span>Copyright &copy; @php date('Y') @endphp - {{ $config->title }}, todos os direitos
                 reservados. Desenvolvido Por
                 <picture>
@@ -13,4 +13,4 @@
             </span>
         </div>
     </div>
-</div>
+</div> 

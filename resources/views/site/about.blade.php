@@ -70,8 +70,6 @@
             </div>
         </div>
     </section>
-    {{-- About --}}
-    @include('site.sections.players')
     {{-- Articles --}}
     @include('site.sections.articles')
     {{-- About --}}

@@ -3,10 +3,20 @@
 *********************************/
 
 .custom-footer {
-    font-size: 16px;
+    font-size: 10pt;
+    color: rgba($white, .7);
     font-family: "Nunito Sans", Arial, sans-serif !important;
-    background: $custom-color-secondary;
+    background: $custom-color-primary;
     padding: 7em 0;
+    h5 {
+        color: rgba($white, .7);
+    }
+    .hr-white {
+        min-height: 0, 5rem;
+        max-width: 50%;
+        background-color: #fff;
+        border-top: solid 0.25rem;
+    }
     .custom-footer-logo {
         text-transform: uppercase;
         letter-spacing: .1em;
@@ -45,11 +55,6 @@
         &:hover {
             color: $white;
         }
-    }
-    .custom-heading-2 {
-        font-size: 17px;
-        font-weight: 400;
-        color: $black;
     }
 }
 

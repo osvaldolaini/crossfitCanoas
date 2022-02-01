@@ -8,9 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(22, 29, 74, 0.75);
     z-index: 100;
-    border-bottom: solid 3px $color-hover;
 }
 
 #main-nav {
@@ -19,7 +17,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: center;
-    height: 100px;
+    height: 70px;
     transition: height 0.7s ease 0s;
 }
 
@@ -34,7 +32,7 @@
 
 .logo_container>div {
     position: relative;
-    top: 8px;
+    top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -46,7 +44,7 @@
 }
 
 .logo {
-    top: 70px;
+    top: 20px;
     position: absolute;
     align-items: center;
     text-align: center;
@@ -59,25 +57,67 @@
     }
 }
 
-.has-children a {
-    padding-top: 60px;
-    position: relative;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    transition: width 0.7s ease 0s;
-}
-
-.has-children a:hover:before {
-    color: $color-hover;
-    visibility: visible;
-    transform: scaleX(1);
+.has-children {
+    a {
+        padding-top: 40px;
+        position: relative;
+        text-decoration: none;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        transition: width 0.7s ease 0s;
+        transition: 0.3s all ease;
+        &::after {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            //left: 0;
+            width: inherit;
+            height: 3px;
+            background: $color-hover;
+            content: '';
+            z-index: 0;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+        }
+        &:hover::after {
+            position: relative;
+            top: -3px;
+        }
+        &:hover {
+            color: $color-hover;
+        }
+    }
+    .nav-link.active {
+        &::after {
+            display: block;
+            position: relative;
+            top: -3px;
+            bottom: 0;
+            //left: 0;
+            width: inherit;
+            height: 3px;
+            background: $color-hover;
+            content: '';
+            z-index: 0;
+            -webkit-transition: all 200ms ease;
+            -moz-transition: all 200ms ease;
+            -ms-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
+            transition: all 200ms ease;
+        }
+        color: $color-hover;
+        // border-bottom: 3px solid $color-hover;
+    }
 }
 
 .resize-on-scroll {
+    background-color: rgba(0, 0, 0, 0.85);
     transition: background-color 0.7s ease 0s;
     .logo img {
-        top: 20px;
+        padding-top: 10px;
         width: 40%;
         transition: width 0.7s ease 0s;
     }

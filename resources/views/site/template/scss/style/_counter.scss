@@ -1,76 +1,10 @@
 /*********************************
-        Counter
+        Jumbo
 *********************************/
 
-.bg-counter {
-    background: $tertiary;
-}
-
-.counter-section {
-    position: relative;
-    .overlay {
-        position: absolute;
-        width: 50%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: "";
-        opacity: 1;
-        background: #000000;
-    }
-}
-
-#milestone_row {
-    padding-top: 63px;
-}
-
-.milestone_col {
-    margin-bottom: 51px;
-}
-
-.milestone_icon {
-    width: 62px;
-    height: 62px;
-}
-
-.milestone_icon img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.milestone_content {
-    padding-left: 26px;
-}
-
-.milestone_counter {
-    font-size: 48px;
-    color: #ff2400;
-    font-weight: 500;
-    line-height: 0.75;
-}
-
-.milestone_title {
-    font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 0.75;
-    margin-top: 19px;
-}
-
-.milestone_subtitle {
-    font-size: 11px;
-    color: #737791;
-    font-weight: 500;
-    margin-top: 9px;
-}
-
-@media (max-width: 767.98px) {
-    .counter-section .overlay {
-        width: 100%;
-        opacity: 0.4;
-    }
-    .milestone_col {
-        max-width: 50%;
-    }
+.jumbo {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url($url+'storage/images/site/jumbo.jpg') !important;
 }

@@ -44,7 +44,7 @@ class SocialMediaController extends Controller
                 );
             }
         }
-
+        
         return view('admin.socialMedia.listAll',[
             'title_postfix' => 'Mídias sociais',
             'navigation'    => $this->new_navigation,

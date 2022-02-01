@@ -26,10 +26,13 @@
                     <a href="{{url('sobre')}}" class="nav-link {{ Request::is('sobre*') ? 'active' : null }}">SOBRE</a>
                   </li>
                   <li class="has-children">
-                    <a href="{{url('nossos-numeros')}}" class="nav-link {{ Request::is('nossos-numeros*') ? 'active' : null }}">ESTATISTICAS</a>
+                    <a href="{{url('o-que-e-crossfit')}}" class="nav-link {{ Request::is('crossfit*') ? 'active' : null }}">CROSSFIT</a>
+                  </li>
+                  <li class="has-children">
+                    <a href="{{url('como-comecar')}}" class="nav-link {{ Request::is('como-comecar*') ? 'active' : null }}">COMO COMEÇAR</a>
                   </li>
                   <div class="logo_container text-center">
-                    <div class="trans_500">
+                    <div >
                         <a href="{{url('')}}" class="logo">
                         <picture class="lazyload img-fluid">
                             <source srcset="{{url('storage/images/logos/logo.png')}}" />
@@ -40,10 +43,13 @@
                     </div>
                   </div>
                   <li class="has-children">
-                    <a href="{{url('elenco')}}" class="nav-link {{ Request::is('elenco*') ? 'active' : null }}">ELENCO</a>
+                    <a href="{{url('modalidades')}}" class="nav-link {{ Request::is('modalidades*') ? 'active' : null }}">MODALIDADES</a>
                   </li>
                   <li class="has-children">
-                    <a href="{{url('noticias')}}" class="nav-link {{ Request::is('noticias*') ? 'active' : null }}">NOTÍCIAS</a>
+                    <a href="{{url('horarios')}}" class="nav-link {{ Request::is('horarios*') ? 'active' : null }}">HORÁRIOS</a>
+                  </li>
+                  <li class="has-children">
+                    <a href="{{url('artigos')}}" class="nav-link {{ Request::is('artigos*') ? 'active' : null }}">ARTIGOS</a>
                   </li>
                   <li class="has-children">
                     <a href="{{url('fale-conosco')}}" class="nav-link {{ Request::is('fale-conosco*') ? 'active' : null }}">CONTATO</a>
@@ -52,22 +58,22 @@
           </div>
     </nav>
     <!-- SMALL NAVBAR nav -->
-    <nav class="navbar navbar-expand-lg fixed-top d-lg-none navbar-dark custom_navbar bg-dark nav-custom nav-custom-small" id="custom-nav">
+    <nav class="navbar navbar-expand-lg fixed-top d-lg-none custom_navbar nav-custom nav-custom-small" id="custom-nav">
         <a class="nav-logo" href="#" >
             <picture class="lazyload img-fluid">
                 <source srcset="{{url('storage/images/logos/logo.png')}}" />
                 <source srcset="{{url('storage/images/logos/logo.webp')}}"/>
                 <img class="lazyload img-fluid" src="{{url('storage/images/logos/logo.png')}}" />
             </picture>
-        </a>
+        </a> 
         <a class="nav-icon navbar-toggler " id="cd-modal-trigger">
-            <i class="fa fa-2x fa-bars"></i>
+            <i class="fa fa-3x fa-bars"></i>
         </a>
     </nav>
     <div class="cd-modal">
-        <div class="modal-content">
+        <div class="modal-content"> 
             <div class="full-menu">
-                <nav class="navbar navbar-expand-lg fixed-top d-lg-none navbar-dark custom_navbar nav-custom nav-custom-small" id="custom-nav">
+                <nav class="navbar navbar-expand-lg fixed-top d-lg-none custom_navbar nav-custom nav-custom-small" id="custom-nav">
                     <a class="nav-logo" href="#" >
                         <picture class="lazyload img-fluid">
                             <source srcset="{{url('storage/images/logos/logo.png')}}" />
@@ -75,18 +81,20 @@
                             <img class="lazyload img-fluid" src="{{url('storage/images/logos/logo.png')}}" />
                         </picture>
                     </a>
-                    <a class="nav-icon nav-toggler" id="modal-close">
-                        <i class="fas fa-3x fa-times nav-toggler-icon"></i>
+                    <a class="nav-icon navbar-toggler-open" id="modal-close">
+                        <i class="fas fa-3x fa-times"></i>
                     </a>
                 </nav>
                 <div class="fullmenu-content">
                     <ul class="page-menu">
-                        <li><a class="{{ Request::is('home*') ? 'active' : null }}" href="{{url('')}}">Home</a></li>
-                        <li><a class="{{ Request::is('sobre*') ? 'active' : null }}" href="{{url('sobre')}}">Sobre</a></li>
-                        <li><a class="{{ Request::is('elenco*') ? 'active' : null }}" href="{{url('elenco')}}">Elenco</a></li>
-                        <li><a class="{{ Request::is('nossos-numeros*') ? 'active' : null }}" href="{{url('nossos-numeros')}}">Estatisticas</a></li>
-                        <li><a class="{{ Request::is('noticias*') ? 'active' : null }}" href="{{url('noticias')}}">Notícias</a></li>
-                        <li><a class="{{ Request::is('fale-conosco*') ? 'active' : null }}" href="{{url('fale-conosco')}}">Contatos</a></li>
+                        <li><a href="{{url('')}}" class="nav-link {{ Request::is('') ? 'active' : null }}">HOME</a></li>
+                        <li><a href="{{url('sobre')}}" class="nav-link {{ Request::is('sobre*') ? 'active' : null }}">SOBRE</a></li>
+                        <li><a href="{{url('o-que-e-crossfit')}}" class="nav-link {{ Request::is('crossfit*') ? 'active' : null }}">CROSSFIT</a></li>
+                        <li><a href="{{url('como-comecar')}}" class="nav-link {{ Request::is('como-comecar*') ? 'active' : null }}">COMO COMEÇAR</a></li>
+                        <li><a href="{{url('modalidades')}}" class="nav-link {{ Request::is('modalidades*') ? 'active' : null }}">MODALIDADES</a></li>
+                        <li><a href="{{url('horarios')}}" class="nav-link {{ Request::is('horarios*') ? 'active' : null }}">HORÁRIOS</a></li>
+                        <li><a href="{{url('artigos')}}" class="nav-link {{ Request::is('artigos*') ? 'active' : null }}">ARTIGOS</a></li>
+                        <li><a href="{{url('fale-conosco')}}" class="nav-link {{ Request::is('fale-conosco*') ? 'active' : null }}">CONTATO</a></li>
                         <li class="social">
                             @if (isset($menu['socialMedias']))
                                 @foreach ($menu['socialMedias'] as $socialMedia)
