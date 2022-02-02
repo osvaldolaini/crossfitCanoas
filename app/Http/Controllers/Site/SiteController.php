@@ -44,7 +44,6 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
             'config'        =>  $config,
         ]);
-        
     }
 
     /*Sobre */
@@ -102,7 +101,7 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
         ]);
     }
-    
+
     /*Contatos */
     public function contact()
     {
@@ -158,31 +157,30 @@ class SiteController extends Controller
     {
         $article = Article::where('slug', $any)->first();
         $players = array();
-            if ( $article->match_id) {
-                $match = Matches::where('id', $article->match_id)->first();
-                $stats = Stats::where('match_id', $article->match_id)->where('active', 1)->get();
-                foreach ($stats as $stat){
-                    $players []= [ 
-                        'name'      => $stat->player->name,
-                        'nick'      => $stat->player->nick,
-                        'number'    => $stat->player->number,
-                        'foot'      => $stat->player->foot,
-                        'position'  => Functions::positions($stat->player->position),
-                        'gols'      => $stat->gols,
-                        'assist'    => $stat->assist,
-                        'yellow_card'=> $stat->yellow_card,
-                        'red_card'  => $stat->red_card,
-                    ];
-                }
-               
-            }else{
-                $match = null;
-                $stats = null;
+        if ($article->match_id) {
+            $match = Matches::where('id', $article->match_id)->first();
+            $stats = Stats::where('match_id', $article->match_id)->where('active', 1)->get();
+            foreach ($stats as $stat) {
+                $players[] = [
+                    'name'      => $stat->player->name,
+                    'nick'      => $stat->player->nick,
+                    'number'    => $stat->player->number,
+                    'foot'      => $stat->player->foot,
+                    'position'  => Functions::positions($stat->player->position),
+                    'gols'      => $stat->gols,
+                    'assist'    => $stat->assist,
+                    'yellow_card' => $stat->yellow_card,
+                    'red_card'  => $stat->red_card,
+                ];
             }
-            // print_r($stats);
-            // exit;
+        } else {
+            $match = null;
+            $stats = null;
+        }
+        // print_r($stats);
+        // exit;
         $config = Config::get()->first();
-        
+
         $images = $article->images()->get();
 
         $trendTopics = Article::select('id', 'slug', 'title', 'created_at')
@@ -229,50 +227,23 @@ class SiteController extends Controller
     }
     public function term()
     {
-        $socialMedias = SocialMedia::where('active', 1)->get();
         $config = Config::get()->first();
-        $players = Athletes::where('active', 1)->limit(6)->inRandomOrder()->get();
-        $allPlayers = array();
-        foreach ($players as $player) {
-            $allPlayers[] = [
-                'id'        => $player->id,
-                'slug'      => $player->slug,
-                'number'    => $player->number,
-                'nick'      => $player->nick,
-                'position'  => Functions::positions($player->position),
-                'image'     => ($player->image ? url('storage/images/athletes/' . $player->id . '/player.png') : url('storage/images/logos/logo.png')),
-            ];
-        }
+
         return view('site.term', [
             'title_postfix' => 'Termo de uso',
             'config'        =>  $config,
             'menu'          =>  $this->menu(),
-            'players'       =>  $allPlayers,
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
         ]);
     }
     public function politics()
     {
-        $socialMedias = SocialMedia::where('active', 1)->get();
-        $players = Athletes::where('active', 1)->limit(6)->inRandomOrder()->get();
-        $allPlayers = array();
-        foreach ($players as $player) {
-            $allPlayers[] = [
-                'id'        => $player->id,
-                'slug'      => $player->slug,
-                'number'    => $player->number,
-                'nick'      => $player->nick,
-                'position'  => Functions::positions($player->position),
-                'image'     => ($player->image ? url('storage/images/athletes/' . $player->id . '/player.png') : url('storage/images/logos/logo.png')),
-            ];
-        }
-        $config = Config::get()->first();
 
+        $config = Config::get()->first();
         return view('site.politics', [
             'title_postfix' => 'Política de privacidade',
             'config'        =>  $config,
             'menu'          =>  $this->menu(),
-            'players'       =>  $allPlayers,
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
         ]);
     }
