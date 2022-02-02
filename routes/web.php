@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(['namespace' => 'Site'], function () { 
     Route::get('/', 'SiteController@index')->name('site.index');
     Route::get('/home', 'SiteController@index')->name('site.index');
+    Route::get('/sobre', 'SiteController@about')->name('site.about');
     Route::get('/o-que-e-crossfit', 'SiteController@who')->name('site.who');
     Route::get('/como-comecar', 'SiteController@what')->name('site.what');
     Route::get('/modalidades', 'SiteController@modalities')->name('site.modalities');
