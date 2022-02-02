@@ -17,7 +17,7 @@ class TableUsers extends Migration
             $table->boolean('active')->nullable();
             $table->unsignedBigInteger('group_id')->nullable();
             $table->string('image',100)->nullable();
-            $table->string('update_by',50)->nullable()->after('updated_at');
+            $table->string('updated_by',50)->nullable()->after('updated_at');
             $table->string('created_by',50)->nullable()->after('created_at');
             /*RELACIONAMENTO*/
             $table->foreign('group_id')->references('id')->on('user_groups')->onDelete('SET NULL');

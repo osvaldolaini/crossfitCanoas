@@ -16,6 +16,7 @@ class CreateUserGroupsTable extends Migration
         Schema::create('user_groups', function (Blueprint $table) {
             $table->id();
             $table->string('title', 50);
+            $table->string('acronym', 50);
             $table->string('level', 3);
             $table->string('status', 20)->nullable();
             $table->timestamps();

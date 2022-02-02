@@ -72,7 +72,7 @@
     @include('site.sections.contact')
     {{-- Newsletter --}}
     @include('site.sections.newsletter')
-    {{-- Articles --}}
-    @include('site.sections.articles')
+    {{-- Articles 
+    @include('site.sections.articles')--}}
     
 @stop
