@@ -33,6 +33,7 @@
 
     <script src="{{ asset('js/share.js') }}"></script>
 
-     <!--Google
-     <script data-ad-client="ca-pub-9377063296356941" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" ></script>
-     <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" ></script>-->
+     <!--Google-->
+
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9377063296356941"
+     crossorigin="anonymous"></script>
