@@ -8,11 +8,11 @@
     <body style="margin: 0; padding: 0;">
         <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
             <tr>
-                <td align="center" bgcolor="#89ad64" style="padding: 20px 0 20px 0;">
-                    <img width="10%" src="{{url('storage/images/email/logo.png')}}" alt="assgapa"  style="display: block;" />
+                <td align="center" bgcolor="#fd7e14" style="padding: 20px 0 20px 0;">
+                    <img width="10%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
                     <h4 style="margin: 0; padding: 0; font-family:arial; color:#ffffff;" >{{$config->title}}</h4>
                 </td>
-            </tr>
+            </tr> 
             <tr>
                 <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
@@ -70,7 +70,7 @@
                                         {!!$facebook!!}
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         <td>
-                                            <a href="https://www.conceptum.com.br/" target="_BLANK">
+                                            <a href="https://www.crossfitcanoas.com.br/" target="_BLANK">
                                                 <img src="{{url('storage/images/email/domain.png')}}" alt="dominio" width="38" height="38" style="display: block;" border="0" />
                                             </a>
                                         </td>
