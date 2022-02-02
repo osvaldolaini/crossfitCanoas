@@ -63,7 +63,7 @@ class contact extends Mailable
             }
         }
         $this->subject('Mensagem de '.$email->customer.' enviada pelo site');
-        $this->to(['contato@crossfitcanoas.com.br'],['no-replay']);
+        $this->to(['contato@lokomotivfccanoas.com.br'],['no-replay']);
         //$this->to('contato@lainitestes.top','no-replay');
         $this->view('admin.email.contact',[
             'title_postfix' => 'no-replay',
