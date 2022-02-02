@@ -1,4 +1,4 @@
-# crossfitCanoas
+# crossfitcanoas
 # V4 02/02/2022
 - Troca do nome no github
 - Deploy no dominio

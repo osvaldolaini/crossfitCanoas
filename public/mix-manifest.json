@@ -1,8 +1,8 @@
 {
-    "/admin/template/upload/uploads.css": "/admin/template/upload/uploads.css?id=c09a7e6b450fe98b0d40",
-    "/admin/template/switch/switch.css": "/admin/template/switch/switch.css?id=e27fb935a1ee09e1d0d8",
-    "/admin/template/validate/css/validate.css": "/admin/template/validate/css/validate.css?id=623a8da046e8dfb6776d",
-    "/site/assets/css/newstyle.css": "/site/assets/css/newstyle.css?id=f0e7bb7d10e53326f82e",
+    "/admin/template/upload/uploads.css": "/admin/template/upload/uploads.css?id=b7d503cca729fce35473",
+    "/admin/template/switch/switch.css": "/admin/template/switch/switch.css?id=976452ff98411400d40a",
+    "/admin/template/validate/css/validate.css": "/admin/template/validate/css/validate.css?id=576b4bfadeb0bd2c8885",
+    "/site/assets/css/newstyle.css": "/site/assets/css/newstyle.css?id=8ed5466deea01e7ce67c",
     "/admin/js/main_admin.js": "/admin/js/main_admin.js?id=bf15e3707e50ed265785",
     "/admin/js/app_crud.js": "/admin/js/app_crud.js?id=4432d0cc0ebe8276cf0c",
     "/admin/js/jquery.mask.min.js": "/admin/js/jquery.mask.min.js?id=f36c7a06f384548ea227",
@@ -24,11 +24,11 @@
     "/admin/js/app_emails.min.js": "/admin/js/app_emails.min.js?id=2d61abe2ebf183cff628",
     "/admin/js/app_views.min.js": "/admin/js/app_views.min.js?id=ee2977ed61f374e3d4f2",
     "/admin/template/highchart/app_charts.min.js": "/admin/template/highchart/app_charts.min.js?id=3ba6ae75883cb6394c17",
-    "/admin/template/switch/switch.min.css": "/admin/template/switch/switch.min.css?id=e27fb935a1ee09e1d0d8",
-    "/admin/template/upload/uploads.min.css": "/admin/template/upload/uploads.min.css?id=c09a7e6b450fe98b0d40",
-    "/admin/template/validate/css/validate.min.css": "/admin/template/validate/css/validate.min.css?id=623a8da046e8dfb6776d",
+    "/admin/template/switch/switch.min.css": "/admin/template/switch/switch.min.css?id=976452ff98411400d40a",
+    "/admin/template/upload/uploads.min.css": "/admin/template/upload/uploads.min.css?id=b7d503cca729fce35473",
+    "/admin/template/validate/css/validate.min.css": "/admin/template/validate/css/validate.min.css?id=576b4bfadeb0bd2c8885",
     "/site/assets/js/app_site.js": "/site/assets/js/app_site.js?id=e8e0c3fba8ab2fbf3970",
-    "/site/assets/css/newstyle.min.css": "/site/assets/css/newstyle.min.css?id=f0e7bb7d10e53326f82e",
+    "/site/assets/css/newstyle.min.css": "/site/assets/css/newstyle.min.css?id=8ed5466deea01e7ce67c",
     "/site/assets/js/app_site.min.js": "/site/assets/js/app_site.min.js?id=e8e0c3fba8ab2fbf3970",
     "/site/template/vendor/app_scripts.min.js": "/site/template/vendor/app_scripts.min.js?id=716db49c7c43571a82b0"
 }
