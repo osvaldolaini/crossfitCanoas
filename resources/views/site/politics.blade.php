@@ -141,8 +141,6 @@
     </section>
     <!--================Blog Area =================-->
 
-    {{-- Highlights --}}
-    @include('site.sections.players')
     {{-- Contacts --}}
     @include('site.sections.contact')
 
