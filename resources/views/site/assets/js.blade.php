@@ -1,5 +1,5 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{{ asset('site/template/vendor/jquery/jquery-slim-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('site/template/vendor/jquery/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('site/template/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
  
     <!-- ADIAR IMAGENS -->
