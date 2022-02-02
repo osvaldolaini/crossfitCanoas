@@ -160,13 +160,8 @@
 
 @media (max-width: 767.98px) {
     .newsletter_input {
-        display: block;
-        width: calc(100% - 50px);
-        height: 25px;
-        background: $white;
-        border: none;
-        outline: none;
-        padding-left: 23px;
-        color: $black;
+        font-family: $font-primary;
+        font-size: 10pt;
+        line-height: 10pt
     }
 }
