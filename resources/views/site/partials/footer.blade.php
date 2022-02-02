@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 mb-5 ">
-                    <div class="hr-white mb-3"></div>
+                    <div class="hr-white my-3"></div>
                     <h5 class="mb-2 f-bebas">Siga-nos nas rede sociais</h5>
                     <ul class="list-inline mb-0">
                         @if (isset($menu['socialMedias']))
