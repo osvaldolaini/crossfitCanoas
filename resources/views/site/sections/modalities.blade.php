@@ -20,7 +20,7 @@
                             <source data-srcset="{{url('storage/images/site/canoas-crossfit.jpg')}}" class="lazyload ">
                             <source data-srcset="{{url('storage/images/site/canoas-crossfit.webp')}}" class="lazyload ">
                             <img class="img-fluid" data-src="{{url('storage/images/site/canoas-crossfit.webp')}}"
-                                alt="{{$config->tags}}-crossfit" class="lazyload ">
+                                alt="{{$config->meta_tags}}-crossfit" class="lazyload ">
                         </picture>
                     </div>
                 </a>
@@ -37,7 +37,7 @@
                             <source data-srcset="{{url('storage/images/site/canoas-crossfit-lpo.webp')}}"
                                 class="lazyload ">
                             <img class="img-fluid" data-src="{{url('storage/images/site/canoas-crossfit-lpo.webp')}}"
-                                alt="{{$config->tags}}-levantamento-de-peso" class="lazyload ">
+                                alt="{{$config->meta_tags}}-levantamento-de-peso" class="lazyload ">
                         </picture>
                     </div>
                 </a>
@@ -54,7 +54,7 @@
                             <source data-srcset="{{url('storage/images/site/canoas-crossfit-ginastica.webp')}}"
                                 class="lazyload ">
                             <img class="img-fluid"
-                                data-src="{{url('storage/images/site/canoas-crossfit-ginastica.webp')}}" alt="{{$config->tags}}-ginastica"
+                                data-src="{{url('storage/images/site/canoas-crossfit-ginastica.webp')}}" alt="{{$config->meta_tags}}-ginastica"
                                 class="lazyload ">
                         </picture>
                     </div>
@@ -72,7 +72,7 @@
                             <source data-srcset="{{url('storage/images/site/canoas-crossfit-mobilidade.webp')}}"
                                 class="lazyload ">
                             <img class="img-fluid"
-                                data-src="{{url('storage/images/site/canoas-crossfit-mobilidade.webp')}}" alt="{{$config->tags}}-mobilidade"
+                                data-src="{{url('storage/images/site/canoas-crossfit-mobilidade.webp')}}" alt="{{$config->meta_tags}}-mobilidade"
                                 class="lazyload ">
                         </picture>
                     </div>
