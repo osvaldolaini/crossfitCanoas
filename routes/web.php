@@ -21,10 +21,11 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/como-comecar', 'SiteController@what')->name('site.what');
     Route::get('/modalidades', 'SiteController@modalities')->name('site.modalities');
     Route::get('/horarios', 'SiteController@timetable')->name('site.timetable');
-
+    
     Route::get('/artigos', 'SiteController@articles')->name('site.articles');
     Route::get('/artigos/{any}', 'SiteController@article')->name('site.article');
 
+    Route::get('/agende-sua-aula-experimental', 'SiteController@class')->name('site.class');
     Route::get('/fale-conosco', 'SiteController@contact')->name('site.contact');
     Route::get('/termo-de-uso', 'SiteController@term')->name('site.term');
     Route::get('/politica-de-privacidade', 'SiteController@politics')->name('site.politics');

@@ -111,7 +111,18 @@ class SiteController extends Controller
             'title_postfix' => 'Contatos',
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
             'config'        =>  $config,
-            'tags'          =>  'conceptum,engenharia, obras, reformas, impermeabilização CONTATOS',
+            'tags'          =>  'crossfit em canoas, crossfit canoas, crossfit, treinamento funcional, academia',
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    public function contact()
+    {
+        $config = Config::get()->first();
+        return view('site.contact', [
+            'title_postfix' => 'Aula experimental',
+            'img_jarallax'  =>  'crossfit-canoas-home-2.jpg',
+            'config'        =>  $config,
+            'tags'          =>  'crossfit em canoas, crossfit canoas, crossfit, treinamento funcional, academia',
             'menu'          =>  $this->menu(),
         ]);
     }
