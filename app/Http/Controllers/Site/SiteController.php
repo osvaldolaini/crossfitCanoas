@@ -115,7 +115,7 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
         ]);
     }
-    public function contact()
+    public function class()
     {
         $config = Config::get()->first();
         return view('site.contact', [
