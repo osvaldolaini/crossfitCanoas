@@ -44,6 +44,7 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
             'config'        =>  $config,
         ]);
+        
     }
 
     /*Sobre */
