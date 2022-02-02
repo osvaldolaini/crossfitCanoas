@@ -11660,6 +11660,10 @@ Modal window
   }
 
   .subpages-header .bread {
+    font-size: 3rem;
+  }
+
+  .subpages-header .breadcrumbs {
     font-size: 2rem;
   }
 
