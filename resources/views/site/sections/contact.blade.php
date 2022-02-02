@@ -32,8 +32,8 @@
                     </div>
                     <div class="form-group row "> 
                         <div class="col-md-12 d-flex align-items-center">
-                            <input type="submit" class="button team_button" value="Enviar">
-                        </div>
+                            <input type="submit" class="button service_button" value="Enviar">
+                        </div> 
                     </div>
                 </form>
                 <div id="form-message-warning" class="mt-4"></div>
@@ -68,7 +68,7 @@
                                             </a>
                                     @endforeach
                                 @endif
-                                <a class="" title="fale com o LOKOMOTIV pelo whatsapp" href="https://web.whatsapp.com/send?phone=55{{$config->whatsapp}}" target="_blank" data-aos="fade-up" data-aos-easing="ease-in-sine">
+                                <a class="" title="fale com o {{$config->title}} pelo whatsapp" href="https://web.whatsapp.com/send?phone=55{{$config->whatsapp}}" target="_blank" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                     <i class="fab fa-3x fa-whatsapp-square"></i>
                                 </a>
                             </div>
