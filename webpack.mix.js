@@ -53,8 +53,8 @@ mix.scripts('resources/views/site/template/js/app_site.js', 'public/site/assets/
     .copyDirectory('resources/views/site/template/fonts', 'public/fonts')
     .copyDirectory('resources/views/site/template/images', 'storage/app/public/images/site')
     .sass('resources/views/site/template/scss/newstyle.scss', 'public/site/assets/css/newstyle.css', {
-        prependData: "$url:'https://www.crossfitcanoas.com.br';"
-            // prependData: "$url:'" + url + "';"
+        // prependData: "$url:'https://www.crossfitcanoas.com.br';"
+        prependData: "$url:'" + url + "';"
     })
 
 .minify([
