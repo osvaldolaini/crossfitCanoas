@@ -14595,7 +14595,7 @@ div#social-links ul li a:hover {
   .newsletter_input {
     display: block;
     width: calc(100% - 50px);
-    height: 45px;
+    height: 25px;
     background: #fff;
     border: none;
     outline: none;
