@@ -11003,7 +11003,7 @@ a.text-custom-secondary:focus {
 
 @font-face {
   font-family: "Bebas";
-  src: url("https://www.crossfitcanoas.com.br/public/fonts/bebas/bebasneue bold.ttf") format("truetype");
+  src: url("https://www.crossfitcanoas.com.brfonts/bebas/bebasneue bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -11012,7 +11012,7 @@ a.text-custom-secondary:focus {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("https://www.crossfitcanoas.com.br/public/fonts/montserrat/montserrat.otf") format("opentype");
+  src: url("https://www.crossfitcanoas.com.brfonts/montserrat/montserrat.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11089,7 +11089,7 @@ h5,
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-image: url("https://www.crossfitcanoas.com.br/public/storage/images/site/crossfit-canoas-box.jpg");
+  background-image: url("https://www.crossfitcanoas.com.brstorage/images/site/crossfit-canoas-box.jpg");
 }
 
 .custom-section {
@@ -11775,7 +11775,7 @@ Modal window
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("https://www.crossfitcanoas.com.br/public/storage/images/site/crossfit-canoas-box.jpg") !important;
+  background-image: url("https://www.crossfitcanoas.com.brstorage/images/site/crossfit-canoas-box.jpg") !important;
   padding-top: 5rem;
   box-sizing: border-box;
   display: flex;
@@ -11944,7 +11944,7 @@ Modal window
   background-size: cover !important;
   background-repeat: no-repeat;
   background-position: top center;
-  background-image: url("https://www.crossfitcanoas.com.br/public/storage/images/site/jumbo.jpg") !important;
+  background-image: url("https://www.crossfitcanoas.com.brstorage/images/site/jumbo.jpg") !important;
 }
 
 /*********************************
@@ -14229,7 +14229,7 @@ div#social-links ul li a:hover {
   /* our sprite is composed of 25 frames */
   width: 2500%;
   z-index: 10000;
-  background: url("https://www.crossfitcanoas.com.br/public/storage/images/menu/ink.png") no-repeat 0 0;
+  background: url("https://www.crossfitcanoas.com.brstorage/images/menu/ink.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -14602,7 +14602,7 @@ Transition Layer
   height: 100%;
   /* our sprite is composed of 25 frames */
   width: 2500%;
-  background: url("https://www.crossfitcanoas.com.br/public/storage/images/menu/ink_white.png") no-repeat 0 0;
+  background: url("https://www.crossfitcanoas.com.brstorage/images/menu/ink_white.png") no-repeat 0 0;
   background-size: 100% 100%;
 }
 
@@ -14616,7 +14616,7 @@ Transition Layer
     height: 100%;
     /* our sprite is composed of 25 frames */
     width: 2500%;
-    background: url("https://www.crossfitcanoas.com.br/public/storage/images/menu/ink.png") no-repeat 0 0;
+    background: url("https://www.crossfitcanoas.com.brstorage/images/menu/ink.png") no-repeat 0 0;
     background-size: 100% 100%;
   }
 }
