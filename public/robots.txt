@@ -3,4 +3,4 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /painel-admin
-Sitemap: https://www.crossfitcanoas.com.br/sitemap.txt
+Sitemap: https://www.crossfitcanoas.com.br/sitemap.xml
