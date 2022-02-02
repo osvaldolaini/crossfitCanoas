@@ -251,3 +251,14 @@ span.error {
     letter-spacing: .1rem;
     color: rgba($font-color, 1);
 }
+
+@media (max-width: 767.98px) {
+    .contact-info {
+        .contact-info-label {
+            font-size: 18px;
+        }
+        .contact-info-val {
+            font-size: 30px;
+        }
+    }
+}

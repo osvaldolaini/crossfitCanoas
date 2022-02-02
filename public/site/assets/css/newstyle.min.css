@@ -12207,6 +12207,16 @@ span.error {
   color: orange;
 }
 
+@media (max-width: 767.98px) {
+  .contact-info .contact-info-label {
+    font-size: 18px;
+  }
+
+  .contact-info .contact-info-val {
+    font-size: 30px;
+  }
+}
+
 /*********************************
         Partners
 *********************************/
