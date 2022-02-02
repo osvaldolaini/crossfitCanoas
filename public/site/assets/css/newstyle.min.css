@@ -12208,6 +12208,10 @@ span.error {
 }
 
 @media (max-width: 767.98px) {
+  .contact-info > div {
+    font-size: 15px;
+  }
+
   .contact-info .contact-info-label {
     font-size: 18px;
   }
