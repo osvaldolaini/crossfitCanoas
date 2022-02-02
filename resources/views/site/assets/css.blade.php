@@ -16,9 +16,3 @@
 
     <link rel="preload" href="{{asset('site/assets/css/newstyle.min.css')}}" as="style" />
     <link rel="stylesheet" href="{{asset('site/assets/css/newstyle.min.css')}}" />
-
-    {{--Laini Ads--}}
-    <link rel="preload" href="{{asset('site/ads/css/ads.min.css')}}" as="style" />
-    <link rel="stylesheet" href="{{asset('site/ads/css/ads.min.css')}}" />
-
-
