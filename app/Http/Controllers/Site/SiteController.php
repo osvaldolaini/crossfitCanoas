@@ -109,7 +109,7 @@ class SiteController extends Controller
         $config = Config::get()->first();
         return view('site.contact', [
             'title_postfix' => 'Contatos',
-            'img_jarallax'  =>  'contact.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
             'config'        =>  $config,
             'tags'          =>  'conceptum,engenharia, obras, reformas, impermeabilização CONTATOS',
             'menu'          =>  $this->menu(),
@@ -237,7 +237,7 @@ class SiteController extends Controller
             'config'        =>  $config,
             'menu'          =>  $this->menu(),
             'players'       =>  $allPlayers,
-            'img_jarallax'  =>  'about.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
         ]);
     }
     public function politics()
@@ -262,7 +262,7 @@ class SiteController extends Controller
             'config'        =>  $config,
             'menu'          =>  $this->menu(),
             'players'       =>  $allPlayers,
-            'img_jarallax'  =>  'about.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
         ]);
     }
 }
