@@ -9,8 +9,8 @@
         <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
             <tr>
                 <td align="center" bgcolor="#fd7e14" style="padding: 20px 0 20px 0;">
-                    <img width="10%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
-                    <h4 style="margin: 0; padding: 0; font-family:arial; color:#ffffff;" >{{$config->title}}</h4>
+                    <img width="30%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
+                    <!--<h4 style="margin: 0; padding: 0; font-family:arial; color:#ffffff;" >{{$config->title}}</h4>-->
                 </td>
             </tr> 
             <tr>
@@ -56,7 +56,7 @@
                    </td>
             </tr>
             <tr>
-                <td bgcolor="#89ad64" style="padding: 20px 30px 20px 30px;">
+                <td bgcolor="#fd7e14" style="padding: 20px 30px 20px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td width="75%">
