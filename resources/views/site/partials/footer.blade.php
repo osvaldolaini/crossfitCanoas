@@ -61,6 +61,20 @@
                             @endforeach
                         @endif
                     </ul>
+                    <div class="hr-white mb-3"></div>
+                    <h5 class="mb-2 f-bebas">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{{url('')}}">Home</a></li>
+                        <li><a href="{{url('sobre')}}">Sobre</a></li>
+                        <li><a href="{{url('o-que-e-crossfit')}}">Crossfit</a></li>
+                        <li><a href="{{url('como-comecar')}}">Como começar</a></li>
+                        <li><a href="{{url('noticias')}}">Artigos</a></li>
+                        <li><a href="{{url('modalidades')}}">Modalidades</a></li>
+                        <li><a href="{{url('horarios')}}">Horarios</a></li>
+                        <li><a href="{{url('fale-conosco')}}">Contatos</a></li>
+                        <li><a href="{{url('termo-de-uso')}}">Termo de uso</a></li>
+                        <li><a href="{{url('politica-de-privacidade')}}">Política de privacidade</a></li>
+                    </ul>
                 </div>
                 <div class="col-md-6 mb-5 text-center py-1 px-1">
                     <iframe
