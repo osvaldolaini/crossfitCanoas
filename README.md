@@ -1,5 +1,13 @@
 # crossfitCanoas
-# V1 29/01/2022
+# V3 01/02/2022
+- Sections 
+    - Quadro horário
+    - Contact
+    - Newslatter
+    - Timetable
+- Partials
+    - adsNews
+# V2 29/01/2022
 - Jumbotrom
 - Menu large / small
 - Sections 

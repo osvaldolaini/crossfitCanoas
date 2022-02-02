@@ -1,5 +1,6 @@
 @extends('site.app')
 @section('body')
+<div class="wrapper jarallax" >
 <section class="custom-section jumbotron-section jarallax">
     <div class="container ">
         <div class="row">
@@ -59,11 +60,19 @@
         </div>
     </div>
 </section>
-    {{-- Articles --}}
+
+</div>
+    {{-- Services --}}
     @include('site.sections.services')
-    {{-- Articles --}}
+    {{-- Modalities --}}
     @include('site.sections.modalities')
+    {{-- Time table --}}
+    @include('site.sections.timetable')
+    {{-- Newsletter --}}
+    @include('site.sections.contact')
+    {{-- Newsletter --}}
+    @include('site.sections.newsletter')
     {{-- Articles --}}
     @include('site.sections.articles')
-
+    
 @stop

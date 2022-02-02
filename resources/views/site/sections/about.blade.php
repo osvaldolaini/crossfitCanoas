@@ -9,8 +9,7 @@
                 <div class="read_more ">
                     <a href="{{url('sobre')}}" class="btn btn-outline-pill btn-custom-light">Saiba mais...</a>
                 </div>
-
-            </div>
+            </div> 
             <div class="col-xl-6 col-lg-6 d-none d-lg-block">
                 <div class="about_thumb d-flex">
                     <div class="img_1 text-center">

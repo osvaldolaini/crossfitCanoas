@@ -13,7 +13,7 @@
 <title>{{$config->title}} @yield('title_postfix', config('adminlte.title_postfix', ''))</title>
 </head>
 <body >
-    <div class="wrapper jarallax" >
+    
         {{-- Head --}}
         @include('site.partials.head')
 
@@ -29,7 +29,6 @@
         {{-- Custom Scripts --}}
         {{--@include('site.assets.simple_js')--}}
         @include('site.assets.js')
-    </div>
 </body>
 
 </html>

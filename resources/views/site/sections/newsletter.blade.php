@@ -1,13 +1,13 @@
     <!-- ======= Newslatter Section ======= -->
-    <section class="section newslatter-section jarallax" id="newslatter" style="background-image: url({{ url('storage/images/site/newsletter1.JPG') }});">
+    <section class="section newslatter-section jarallax" id="newslatter" style="background-image: url({{ url('storage/images/site/newsletter-2.jpg') }});">
         <div class="overlay"></div>
         <div class="d-flex align-items-center " >
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-7 text-center heading-section heading-section-white " >
-                        <h2 >Newsletter</h2>
+                        <h2 class="f-bebas">Newsletter</h2>
                         <h4 data-aos="fade-left">Quer saber mais sobre nossos time?</h4>
-                            <p data-aos="fade-right">Inscreva-se para receber todas as notícias.</p>
+                            <p class="subtitle" data-aos="fade-right">Inscreva-se para receber todas as notícias.</p>
                             <div class="newsletter" id="newsletter" data-aos="fade-up">
                                 <div class="newsletter_form_container">
                                     <form method="post" class="form-outline-style" id="newsletterForm" >

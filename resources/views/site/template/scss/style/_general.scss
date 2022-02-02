@@ -74,7 +74,7 @@ h5,
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url($url+'storage/images/site/crossfit-canoas-box.jpg');
-    height: 200vh;
+    //height: 200vh;
 }
 
 .custom-section {
@@ -83,7 +83,13 @@ h5,
 }
 
 .section-services {
-    background-color: white;
+    background-color: $white;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.section-timetable {
+    background-color: $custom-color-secondary;
     padding-top: 3em;
     padding-bottom: 4em;
 }
@@ -114,32 +120,24 @@ h5,
     }
 }
 
+.heading-section-orange {
+    font-family: "Bebas";
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+    color: $white;
+    text-transform: uppercase;
+    position: relative;
+    span {
+        color: $black;
+    }
+}
+
 .text-section {
     text-align: center;
     $font-primary: 'Roboto', sans-serif;
     i {
         color: $custom-color-secondary;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .custom-section {
-        padding: 6em 0;
-    }
-    .heading-section {
-        font-family: "Bebas";
-        font-size: 10em;
-    }
-    .heading-section-dark {
-        font-family: "Bebas";
-        font-size: 10em;
-    }
-    .text-section {
-        font-size: 9pt;
-    }
-    .section-services {
-        background-color: white;
-        padding: 6em 0;
     }
 }
 
@@ -198,6 +196,7 @@ button:active {
 }
 
 .button {
+    font-size: 3em;
     display: inline-block;
     width: 200px;
     height: 64px;
@@ -239,4 +238,36 @@ button:active {
 
 .service_button {
     width: 300px;
+}
+
+@media (max-width: 767.98px) {
+    .custom-section {
+        padding: 6em 0;
+    }
+    .heading-section {
+        font-family: "Bebas";
+        font-size: 10em;
+    }
+    .heading-section-dark {
+        font-family: "Bebas";
+        font-size: 10em;
+    }
+    .heading-section-orange {
+        font-family: "Bebas";
+        font-size: 10em;
+    }
+    .text-section {
+        font-size: 9pt;
+    }
+    .section-services {
+        background-color: $white;
+        padding: 6em 0;
+    }
+    .section-timetable {
+        background-color: $custom-color-primary;
+        padding: 6em 0;
+    }
+    .button {
+        font-size: 5em;
+    }
 }

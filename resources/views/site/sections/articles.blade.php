@@ -1,13 +1,11 @@
     <!-- ======= Courses Section ======= -->
     <section class="custom-section articles-section" id="portfolio">
         <div class="container">
-            <div class="row pb-5">
+            <div class="row">
                 <div class="col">
-                    <div class="section_title_container">
-                        <div class="section_title text-center">
-                            <h1>Notícias</h1>
-                        </div>
-                    </div>
+                    <h2 class="heading-section" data-aos="fade-up" data-aos-delay="100">
+                        <span>Notícias</span>
+                    </h2>
                 </div>
             </div>
             <div class="row article blog align-items-stretch"></div>
@@ -16,9 +14,6 @@
                     <div class="button team_button"><a href="{{url('noticias')}}">Veja mais</a></div>
                 </div>
             </div>
-            
-            
-            @include('site.partials.adsPlayer')
             <script>
                 async function fetchAsync () {
                     let apiUrl = API_URL+'/api/apiArticles'

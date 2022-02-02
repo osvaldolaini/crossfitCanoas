@@ -52,7 +52,51 @@ class SiteController extends Controller
         $config = Config::get()->first();
         return view('site.about', [
             'title_postfix' => 'Sobre',
-            'img_jarallax'  =>  'about.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-2.jpg',
+            'config'        =>  $config,
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    /*O que é crossfit */
+    public function who()
+    {
+        $config = Config::get()->first();
+        return view('site.who', [
+            'title_postfix' => 'O que é crossfit',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
+            'config'        =>  $config,
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    /*Como começar */
+    public function what()
+    {
+        $config = Config::get()->first();
+        return view('site.what', [
+            'title_postfix' => 'Como começar',
+            'img_jarallax'  =>  'crossfit-canoas-home-3.jpg',
+            'config'        =>  $config,
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    /*Como começar */
+    public function modalities()
+    {
+        $config = Config::get()->first();
+        return view('site.modalities', [
+            'title_postfix' => 'Modalidades',
+            'img_jarallax'  =>  'crossfit-canoas-home-4.jpg',
+            'config'        =>  $config,
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    /*Horarios */
+    public function timetable()
+    {
+        $config = Config::get()->first();
+        return view('site.timetable', [
+            'title_postfix' => 'Quadro horário',
+            'img_jarallax'  =>  'crossfit-canoas-home-5.jpg',
             'config'        =>  $config,
             'menu'          =>  $this->menu(),
         ]);
@@ -90,7 +134,7 @@ class SiteController extends Controller
         $config = Config::get()->first();
         return view('site.articles', [
             'title_postfix' =>  'Notícias',
-            'img_jarallax'  =>  'about.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
             'config'        =>  $config,
             'articles'      =>  $articles,
             'trendTopics'   =>  $trendTopics,
@@ -166,7 +210,7 @@ class SiteController extends Controller
             'images'        =>  $images,
             'match'         =>  $match,
             'players'         =>  $players,
-            'img_jarallax'  =>  'about.jpg',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
             'menu'          =>  $this->menu(),
             'social'        =>  $this->share('noticias/' . $article->slug, $article->title),
         ]);

@@ -10,8 +10,8 @@
         </div>
         <div class="row">
             <div class="col-lg-3 mb-3 card-modalities" data-aos="fade-up">
-                <a class="modalities-item" href="{{url('modalidades/crossfit')}}" data-toggle="tooltip"
-                    title="CrossFit">
+                <a class="modalities-item" href="{{url('modalidades#crossfit')}}" data-toggle="tooltip"
+                    title="CrossFit"> 
                     <div class="title">   
                         CrossFit
                     </div>
@@ -26,7 +26,7 @@
                 </a>
             </div>
             <div class="col-lg-3 mb-3 card-modalities" data-aos="fade-up" data-aos-delay="200">
-                <a class="modalities-item" href="{{url('modalidades/levantamento-de-peso')}}" data-toggle="tooltip" title="Levantamento de peso">
+                <a class="modalities-item" href="{{url('modalidades#lpo')}}" data-toggle="tooltip" title="Levantamento de peso">
                     <div class="title">
                         Levantamento de peso
                     </div>
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="col-lg-3 mb-3 card-modalities" data-aos="fade-up" data-aos-delay="400">
-                <a class="modalities-item" href="{{url('modalidades/ginastica')}}" data-toggle="tooltip" title="Movimentos Ginásticos">    
+                <a class="modalities-item" href="{{url('modalidades#gym')}}" data-toggle="tooltip" title="Movimentos Ginásticos">    
                     <div class="title">
                         Movimentos Ginásticos
                     </div>
@@ -61,7 +61,7 @@
                 </a>
             </div>
             <div class="col-lg-3 mb-3 card-modalities" data-aos="fade-up" data-aos-delay="600">
-                <a class="modalities-item" href="{{url('modalidades/mobilidades')}}" data-toggle="tooltip" title="Mobilidades">
+                <a class="modalities-item" href="{{url('modalidades#mobilidade')}}" data-toggle="tooltip" title="Mobilidades">
                     <div class="title">
                         Mobilidades
                     </div>
