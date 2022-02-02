@@ -79,4 +79,4 @@
         @endif
 
         <!--google-->
-        <meta name="google-site-verification" content="Bn8He7Hzehp0SPRX_5rqF6v9BIyCeJb5SAkXYTor5Ec" />
+        <meta name="google-site-verification" content="osjVipAISFH7r6nqGozRBi9tgWBkAqC6TvRCfCK-I9I" />

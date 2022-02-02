@@ -25,7 +25,7 @@
     <script src="{{ asset('site/template/vendor/scrollMagic/scrollmagic.animation.gsap.min.js') }}"></script>
 
     {{-- Jssor carousel --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/28.0.0/jssor.slider.min.js"></script>
+    <script src="{{ asset('site/template/vendor/jssor.carousel/jssor.slider-28.1.0.min.js') }}"></script>
 
     <script src="{{ asset('admin/js/app_views.min.js') }}"></script>
     <script src="{{ asset('site/assets/js/app_site.min.js') }}"></script>
