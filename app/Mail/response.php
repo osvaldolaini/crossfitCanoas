@@ -26,7 +26,7 @@ class response extends Mailable
     {
         $this->config = Config::get()->first();
         $this->email = $email;
-        $this->socialMedia = SocialMedia::all();
+        $this->socialMedia = SocialMedia::where('active',1)->get();
     }
 
     /**

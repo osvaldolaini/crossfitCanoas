@@ -26,8 +26,8 @@ class subscribers extends Mailable
     public function __construct($content,$url,$image)
     {
         $this->config = Config::get()->first();
-        $this->subscribers = Subscriber::all();
-        $this->socialMedia = SocialMedia::all();
+        $this->subscribers = Subscriber::where('active',1)->get();
+        $this->socialMedia = SocialMedia::where('active',1)->get();
         $this->content = $content;
         $this->url = $url;
         $this->image = $image;

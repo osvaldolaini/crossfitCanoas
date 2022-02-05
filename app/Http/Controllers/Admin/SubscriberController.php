@@ -41,8 +41,8 @@ class SubscriberController extends Controller
         ->where('id', $request->id)
         ->update(['send_by' => Auth::user()->name,'send_at' => date('Y-m-d H:i:s')]);
 
-        Mail::send(new \App\Mail\subscribers($send,$url,$image));
-
+        //Mail::send(new \App\Mail\subscribers($send,$url,$image));
+        return new \App\Mail\subscribers($send,$url,$image);
         if($update){
            // Mail::send(new \App\Mail\subscribers($send,$url,$image));
             return response()->json(
