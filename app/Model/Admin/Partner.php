@@ -18,7 +18,7 @@ class Partner extends Model
     public function setTitleAttribute($value)
     {
         $this->attributes['title']=mb_strtoupper($value);
-        $this->attributes['slug']='conceptum-impermeabilizacoes-obras-civis-'.Str::slug($value);
+        $this->attributes['slug']='crossfit-canoas-'.Str::slug($value);
     }
     protected $fillable = [
         'id', 'active', 'title', 'slug', 'link', 'image',

@@ -71,7 +71,6 @@ class subscribers extends Mailable
                 </td>';
             }
         }
-
         $this->subject($this->content->title);
         foreach ($subscribers as $subscriber) {
             $this->bcc([$subscriber->email],'no-replay');

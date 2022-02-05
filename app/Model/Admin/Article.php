@@ -18,7 +18,7 @@ class Article extends Model
     public function setTitleAttribute($value)
     {
         $this->attributes['title']=mb_strtoupper($value);
-        $this->attributes['slug']='lokomotiv-canoas-fc-'.Str::slug($value);
+        $this->attributes['slug']='crossfit-canoas-'.Str::slug($value);
 
         $tags = str_replace('-', ', ', Str::slug($value));
         $tags = mb_strimwidth($tags, 0, 80, "");
