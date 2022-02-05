@@ -24,7 +24,7 @@ class contact extends Mailable
      * @return void
      */
     public function __construct($email)
-    {
+    { 
         $this->config = Config::get()->first();
         $this->email = $email;
 

@@ -16,6 +16,7 @@ class response extends Mailable
     private $config;
     private $email;
 
+    private $socialMedia;
     /**
      * Create a new message instance.
      *
@@ -25,6 +26,7 @@ class response extends Mailable
     {
         $this->config = Config::get()->first();
         $this->email = $email;
+        $this->socialMedia = SocialMedia::all();
     }
 
     /**
@@ -35,15 +37,41 @@ class response extends Mailable
     public function build()
     {
         $config = $this->config;
-        $this->subject($this->email->subject);
+        $email = $this->email;
+        
+        $socialMedia = $this->socialMedia;
+
+        foreach($socialMedia as $media){
+            if($media->icon == 'fa-instagram'){
+                $instagram = '<td>
+                    <a href="'.$media->link.'" target="_BLANK">
+                        <img src="'.url("storage/images/email/instagram-1.png").'" alt="Instagram" width="38" height="38" style="display: block;" border="0" />
+                    </a>
+                </td>';
+            }else{
+                $instagram ='';
+            }
+            if($media->icon == 'fa-facebook'){
+                $facebook = '<td>
+                    <a href="'.$media->link.'" target="_BLANK">
+                        <img src="'.url("storage/images/email/facebook-1.png").'" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
+                    </a>
+                </td>';
+            }else{
+                $facebook ='';
+            }
+        }
+        $this->subject($email->subject);
         //foreach ($this->partners as $partner) {
-            $this->to([$this->email->from],[$this->email->customer]);
+            $this->to([$email->from],[$email->customer]);
             //$this->to('osvaldolaini@hotmail.com','osvaldolaini');
             //$this->bcc([$partner->email]);
             $this->view('admin.email.response',[
-                'title_postfix' => $this->email->subject,
+                'title_postfix' => $email->subject,
                 'config'        => $config,
-                'email'         => $this->email,
+                'email'         => $email,
+                'instagram'     => $instagram,
+                'facebook'      => $facebook,
             ]);
         //}
     }
