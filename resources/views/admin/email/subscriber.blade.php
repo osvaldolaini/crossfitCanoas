@@ -114,16 +114,16 @@ a[x-apple-data-detectors] {
                         <table class="es-content es-visible-simple-html-only" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
                             <tr style="border-collapse:collapse">
                             <td class="es-stripe-html" align="center" style="padding:0;Margin:0">
-                            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#EFEFEF;width:600px" cellspacing="0" cellpadding="0" bgcolor="#EFEFEF" align="center">
+                            <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#343a40;width:600px" cellspacing="0" cellpadding="0" bgcolor="#343a40" align="center">
                                 <tr style="border-collapse:collapse">
-                                    <td style="padding:5px;Margin:0;background-color:#EFEFEF" bgcolor="#EFEFEF" align="left">
+                                    <td style="padding:5px;Margin:0;background-color:#343a40" bgcolor="#343a40" align="left">
                                         <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                             <tr style="border-collapse:collapse">
                                                 <td valign="top" align="center" style="padding:0;Margin:0;width:590px">
                                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                         <tr style="border-collapse:collapse">
                                                             <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                                <img class="adapt-logo" src="{{url('storage/images/site/logo.png')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="120">
+                                                                <img class="adapt-logo" src="{{url('storage/images/site/logo.png')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="200">
                                                             </td>
                                                         </tr>
                                                     </table>
