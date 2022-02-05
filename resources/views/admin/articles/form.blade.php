@@ -71,34 +71,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <label for="match_id">*Jogo</label>
-                        <select class="form-control" data-name="Jogo" placeholder="Jogo" name="match_id" >
-                            <option value="">Selecione...</option>
-                            @if(isset($data))
-                                @if(isset($matches))
-                                    @foreach ($matches as $match)
-                                        <option value="{{$match->id}}" {{($data->match_id == $match->id ? 'selected=""' : '')}}>
-                                            Dia {{($match->date ? date( 'd/m/Y' , strtotime($match->date)) : "")}} - vs {{$match->apponents->nick}}
-                                        </option>
-                                    @endforeach
-                                @endif
-                            @else
-                                @if(isset($matches))
-                                    @foreach ($matches as $match)
-                                        <option value="{{$match->id}}">
-                                            Dia {{($match->date ? date( 'd/m/Y' , strtotime($match->date)) : "")}} - vs {{$match->apponents->nick}}
-                                        </option>
-                                    @endforeach
-                                @endif
-                            @endif
-                        </select>
-                    </div>
-                </div>
-                
-
+                </div>             
                 <div class="row">
                     <div class="col-lg-12">
                         <label for="text">Artigo</label>
