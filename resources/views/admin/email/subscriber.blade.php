@@ -74,7 +74,7 @@ a[x-apple-data-detectors] {
 </style>
  </head>
     <body style="width:100%;font-family:tahoma, verdana, segoe, sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Margin:0">
-        <div class="es-wrapper-color" style="background-color:#EFEFEF">
+        <div class="es-wrapper-color" style="background-color:#343a40">
             <table class="es-wrapper" width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;background-repeat:repeat;background-position:center top">
                 <tr style="border-collapse:collapse">
                     <td valign="top" style="padding:0;Margin:0">
@@ -123,7 +123,7 @@ a[x-apple-data-detectors] {
                                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                         <tr style="border-collapse:collapse">
                                                             <td align="center" style="padding:0;Margin:0;font-size:0px">
-                                                                <img class="adapt-logo" src="{{url('storage/images/site/logo.png')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="80">
+                                                                <img class="adapt-logo" src="{{url('storage/images/site/logo.png')}}" alt style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="120">
                                                             </td>
                                                         </tr>
                                                     </table>
