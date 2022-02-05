@@ -68,7 +68,7 @@ class Functions
     public static function thumbnail($tmp, $path, $size, $tiny = null)
     {
 
-        Storage::delete(['public/tmp/thumbnail.jpg']);
+        Storage::delete(['public/tmp/thumbnail.jpg', 'public/tmp/thumbnail.webp']);
         /*IMAGE Thumbnail */
         // open file a image resource
         $img = Image::make($tmp);
@@ -100,7 +100,7 @@ class Functions
     /*uploads */
     public static function uploadImage($tmp, $path, $thumb, $height, $width, $tiny = false)
     {
-        Storage::delete(['public/tmp/thumbnail.jpg']);
+        Storage::delete(['public/tmp/thumbnail.jpg', 'public/tmp/thumbnail.webp']);
         // open file a image resource
         $img = Image::make($tmp);
         /*IMAGE Thumbnail */

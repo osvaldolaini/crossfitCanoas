@@ -24,7 +24,7 @@ class ArticleController extends Controller
         'msg-success-delete'    => 'Artigo excluida com sucesso',
         'msg-error-delete'      => 'Não foi possivel excluir o artigo',
         'msg-not-found'         => 'Artigo não encontrada',
-        'location'              => 'artigos',
+        'location'              => 'noticias',
     );
 
     /**
