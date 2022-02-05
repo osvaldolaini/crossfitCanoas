@@ -233,6 +233,7 @@ class SiteController extends Controller
         // $channelId = $config->youtube;
         $channelId = 'UC9sWQoZ0Ww6phxnRoSGYmPQ';
         $videoLists = $this->_videoLists($channelId);
+
         return view('site.youtube.index', [
             'title_postfix' => 'Nossos vídeos',
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
@@ -273,6 +274,8 @@ class SiteController extends Controller
         $type = 'video'; // You can select any one or all, we are getting only videos
 
         $url = "$youTubeEndPoint?regionCode=$country&order=$order&channelId=$channelId&part=$part&maxResults=$maxResults&type=$type&key=$apiKey";
+        echo $url;
+        exit;
         $response = Http::get($url);
         $results = json_decode($response);
         // echo '<pre>';
@@ -294,6 +297,7 @@ class SiteController extends Controller
         $type = 'video'; // You can select any one or all, we are getting only videos
 
         $url = "$youTubeEndPoint?regionCode=$country&order=$order&channelId=$channelId&part=$part&maxResults=$maxResults&type=$type&key=$apiKey";
+
         $response = Http::get($url);
         $results = json_decode($response);
         // echo '<pre>';
