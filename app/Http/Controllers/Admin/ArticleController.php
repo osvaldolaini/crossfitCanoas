@@ -6,7 +6,6 @@ use App\Helpers\Functions;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\Article;
 use App\Model\Admin\ArticleImage;
-use App\Model\Admin\Matches;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -67,11 +66,9 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        $matches =  Matches::where('active',1)->where('date','<=',date('Y-m-d'))->orderBy('date','desc')->get();
-        return view('admin.articles.form',[
+       return view('admin.articles.form',[
             'title_postfix'     => $this->configs['new'],
             'navigation'        => $this->navigation,
-            'matches'           => $matches,
         ]);
     }
 
@@ -94,8 +91,6 @@ class ArticleController extends Controller
         $article->text       = $request->text;
         $article->created_by = Auth::user()->name;
         $article->clicks     = 1;
-
-        $article->match_id   = $request->match_id;
 
         if($article->save()){
             $images = $request->images;
@@ -187,14 +182,12 @@ class ArticleController extends Controller
     public function edit(Article $article)
     {
         $images = $article->images()->get();
-        $matches =  Matches::where('active',1)->where('date','<=',date('Y-m-d'))->orderBy('date','desc')->get();
         
         return view('admin.articles.form',[
             'title_postfix'     => $article->title,
             'navigation'        => $this->navigation,
             'data'              => $article,
             'images'            => $images,
-            'matches'            => $matches,
         ]);
     }
 
@@ -216,7 +209,6 @@ class ArticleController extends Controller
         $article->title = $request->title;
         $article->active = $request->active;
         $article->text = $request->text;
-        $article->match_id   = $request->match_id;
         $article->updated_because = $request->updated_because;
         $article->updated_by = Auth::user()->name;
 
