@@ -14,7 +14,7 @@
                 </td>
             </tr>  
             <tr>
-                <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                <td bgcolor="#343a40" style="padding: 40px 30px 40px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td width="260" valign="top">
