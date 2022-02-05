@@ -234,9 +234,9 @@ class SiteController extends Controller
         $channelId = 'UC9sWQoZ0Ww6phxnRoSGYmPQ';
         $videoLists = $this->_videoLists($channelId);
 
-        echo '<pre>';
-        print_r($videoLists);
-        exit;
+        // echo '<pre>';
+        // print_r($videoLists);
+        // exit;
         return view('site.youtube.index', [
             'title_postfix' => 'Nossos vídeos',
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
