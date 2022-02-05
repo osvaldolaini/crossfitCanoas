@@ -69,6 +69,8 @@
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         {!!$facebook!!}
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                        {!!$youtube!!}
+                                        <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         <td>
                                             <a href="https://www.crossfitcanoas.com.br/" target="_BLANK">
                                                 <img src="{{url('storage/images/email/domain.png')}}" alt="dominio" width="38" height="38" style="display: block;" border="0" />

@@ -254,8 +254,8 @@ class EmailController extends Controller
         $email->active = 1;
 
         if($email->save()){
-            //Mail::send(new \App\Mail\response($email));
-            return new \App\Mail\response($email);
+            Mail::send(new \App\Mail\response($email));
+            //return new \App\Mail\response($email);
             return response()->json(
                 [
                     'success' => true,

@@ -221,6 +221,7 @@ a[x-apple-data-detectors] {
                                                                                             <tr style="border-collapse:collapse">
                                                                                                 {!!$instagram!!}
                                                                                                 {!!$facebook!!}
+                                                                                                {!!$youtube!!}
                                                                                                 <td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px">
                                                                                                     <a href="{{url('')}}" target="_BLANK">
                                                                                                         <img title="website" src="{{url('storage/images/email/domain.png')}}" alt="Ig" width="32" height="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">

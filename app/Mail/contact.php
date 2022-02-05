@@ -43,23 +43,36 @@ class contact extends Mailable
         $socialMedia = $this->socialMedia;
 
         foreach($socialMedia as $media){
+
             if($media->icon == 'fa-instagram'){
                 $instagram = '<td>
                     <a href="'.$media->link.'" target="_BLANK">
-                        <img src="'.url("storage/images/email/instagram-1.png").'" alt="Instagram" width="38" height="38" style="display: block;" border="0" />
+                        <img src="'.url("storage/images/email/instagram-1.png").'" alt="crossfit-canoas-instagram" width="38" height="38" style="display: block;" border="0" />
                     </a>
                 </td>';
+                break;
             }else{
                 $instagram ='';
             }
             if($media->icon == 'fa-facebook'){
                 $facebook = '<td>
                     <a href="'.$media->link.'" target="_BLANK">
-                        <img src="'.url("storage/images/email/facebook-1.png").'" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
+                        <img src="'.url("storage/images/email/facebook-1.png").'" alt="crossfit-canoas-facebook" width="38" height="38" style="display: block;" border="0" />
                     </a>
                 </td>';
+                break;
             }else{
                 $facebook ='';
+            }
+            if($media->icon == 'fa-youtube'){
+                $youtube = '<td>
+                    <a href="'.$media->link.'" target="_BLANK">
+                        <img src="'.url("storage/images/email/youtube.png").'" alt="crossfit-canoas-youtube" width="38" height="38" style="display: block;" border="0" />
+                    </a>
+                </td>';
+                break;
+            }else{
+                $youtube ='';
             }
         }
         $this->subject('Mensagem de '.$email->customer.' enviada pelo site');
@@ -71,6 +84,7 @@ class contact extends Mailable
             'email'         => $email,
             'instagram'     => $instagram,
             'facebook'      => $facebook,
+            'youtube'       => $youtube,
         ]);
     }
 }

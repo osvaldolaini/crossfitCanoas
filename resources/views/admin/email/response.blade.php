@@ -41,9 +41,11 @@
                             <td align="right">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        {{$instagram}}
+                                        {!!$instagram!!}
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         {!!$facebook!!}
+                                        <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                        {!!$youtube!!}
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         <td>
                                             <a href="https://www.crossfitcanoas.com.br/" target="_BLANK">
