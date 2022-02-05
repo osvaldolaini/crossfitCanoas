@@ -71,6 +71,7 @@
                         <li><a href="{{url('como-comecar')}}">Como começar</a></li>
                         <li><a href="{{url('noticias')}}">Artigos</a></li>
                         <li><a href="{{url('modalidades')}}">Modalidades</a></li>
+                        <li><a href="{{url('youtube')}}">Nossos vídeos</a></li>
                         <li><a href="{{url('horarios')}}">Horarios</a></li>
                         <li><a href="{{url('fale-conosco')}}">Contatos</a></li>
                         <li><a href="{{url('termo-de-uso')}}">Termo de uso</a></li>

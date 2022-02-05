@@ -274,8 +274,7 @@ class SiteController extends Controller
         $type = 'video'; // You can select any one or all, we are getting only videos
 
         $url = "$youTubeEndPoint?regionCode=$country&order=$order&channelId=$channelId&part=$part&maxResults=$maxResults&type=$type&key=$apiKey";
-        echo $url;
-        exit;
+        
         $response = Http::get($url);
         $results = json_decode($response);
         // echo '<pre>';

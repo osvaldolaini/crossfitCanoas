@@ -43,10 +43,10 @@
                     </div>
                   </div>
                   <li class="has-children">
-                    <a href="{{url('modalidades')}}" class="nav-link {{ Request::is('modalidades*') ? 'active' : null }}">MODALIDADES</a>
+                    <a href="{{url('horarios')}}" class="nav-link {{ Request::is('horarios*') ? 'active' : null }}">HORÁRIOS</a>
                   </li>
                   <li class="has-children">
-                    <a href="{{url('horarios')}}" class="nav-link {{ Request::is('horarios*') ? 'active' : null }}">HORÁRIOS</a>
+                    <a href="{{url('youtube')}}" class="nav-link {{ Request::is('youtube*') ? 'active' : null }}">NOSSOS VÍDEOS</a>
                   </li>
                   <li class="has-children">
                     <a href="{{url('artigos')}}" class="nav-link {{ Request::is('artigos*') ? 'active' : null }}">ARTIGOS</a>
@@ -91,7 +91,7 @@
                         <li><a href="{{url('sobre')}}" class="nav-link {{ Request::is('sobre*') ? 'active' : null }}">SOBRE</a></li>
                         <li><a href="{{url('o-que-e-crossfit')}}" class="nav-link {{ Request::is('crossfit*') ? 'active' : null }}">CROSSFIT</a></li>
                         <li><a href="{{url('como-comecar')}}" class="nav-link {{ Request::is('como-comecar*') ? 'active' : null }}">COMO COMEÇAR</a></li>
-                        <li><a href="{{url('modalidades')}}" class="nav-link {{ Request::is('modalidades*') ? 'active' : null }}">MODALIDADES</a></li>
+                        <li><a href="{{url('youtube')}}" class="nav-link {{ Request::is('youtube*') ? 'active' : null }}">NOSSOS VÍDEOS</a></li>
                         <li><a href="{{url('horarios')}}" class="nav-link {{ Request::is('horarios*') ? 'active' : null }}">HORÁRIOS</a></li>
                         <li><a href="{{url('artigos')}}" class="nav-link {{ Request::is('artigos*') ? 'active' : null }}">ARTIGOS</a></li>
                         <li><a href="{{url('fale-conosco')}}" class="nav-link {{ Request::is('fale-conosco*') ? 'active' : null }}">CONTATO</a></li>
