@@ -5,8 +5,8 @@
   <title>{{$email->title}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-    <body style="margin: 0; padding: 0;">
-        <table align="center" bgcolor="#FFA500" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+    <body style="margin: 0; padding: 0; " bgcolor="#343a40">
+        <table align="center" bgcolor="#343a40" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
             <tr>
                 <td align="center" bgcolor="#fd7e14" style="padding: 20px 0 20px 0;">
                     <img width="30%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
@@ -20,7 +20,7 @@
                             <td width="260" valign="top">
                                 <table cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
-                                        <td style="padding: 10px 0 0 0; font-family:arial;">
+                                        <td style="padding: 10px 0 0 0; font-family:arial; color:#ffffff;">
 
                                            {!!$email->answer!!}
                                         </td>
