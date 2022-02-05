@@ -30,6 +30,9 @@ Route::group(['namespace' => 'Site'], function () {
     Route::get('/fale-conosco', 'SiteController@contact')->name('site.contact');
     Route::get('/termo-de-uso', 'SiteController@term')->name('site.term');
     Route::get('/politica-de-privacidade', 'SiteController@politics')->name('site.politics');
+
+    Route::get('/youtube', 'SiteController@youtube')->name('site.youtube');
+    Route::get('/youtube/{id}', 'SiteController@watch')->name('site.watch');
 });
     Route::post('/enviar-email', 'Admin\EmailController@store')->name('email.store');
     Route::post('/newsletter', 'Admin\SubscriberController@store')->name('subscriber.store');

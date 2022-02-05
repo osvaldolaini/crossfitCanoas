@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Helpers\Functions;
 use App\Http\Controllers\Controller;
 
 use App\Model\Admin\Config;
@@ -10,7 +9,9 @@ use App\Model\Admin\Config;
 use App\Model\Admin\SocialMedia;
 use App\Model\Admin\Article;
 use Jorenvh\Share\Share;
-use League\CommonMark\Normalizer\SlugNormalizer;
+
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Http;
 
 class SiteController extends Controller
 {
@@ -114,6 +115,7 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
         ]);
     }
+    
     public function class()
     {
         $config = Config::get()->first();
@@ -156,29 +158,7 @@ class SiteController extends Controller
     public function article($any)
     {
         $article = Article::where('slug', $any)->first();
-        $players = array();
-        if ($article->match_id) {
-            $match = Matches::where('id', $article->match_id)->first();
-            $stats = Stats::where('match_id', $article->match_id)->where('active', 1)->get();
-            foreach ($stats as $stat) {
-                $players[] = [
-                    'name'      => $stat->player->name,
-                    'nick'      => $stat->player->nick,
-                    'number'    => $stat->player->number,
-                    'foot'      => $stat->player->foot,
-                    'position'  => Functions::positions($stat->player->position),
-                    'gols'      => $stat->gols,
-                    'assist'    => $stat->assist,
-                    'yellow_card' => $stat->yellow_card,
-                    'red_card'  => $stat->red_card,
-                ];
-            }
-        } else {
-            $match = null;
-            $stats = null;
-        }
-        // print_r($stats);
-        // exit;
+        
         $config = Config::get()->first();
 
         $images = $article->images()->get();
@@ -218,8 +198,6 @@ class SiteController extends Controller
             'seeMore'       =>  $seeMore,
             'tags'          =>  $article->tags,
             'images'        =>  $images,
-            'match'         =>  $match,
-            'players'         =>  $players,
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
             'menu'          =>  $this->menu(),
             'social'        =>  $this->share('noticias/' . $article->slug, $article->title),
@@ -246,5 +224,96 @@ class SiteController extends Controller
             'menu'          =>  $this->menu(),
             'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
         ]);
+    }
+
+    /*Youtube */
+    public function youtube()
+    {
+        $config = Config::get()->first();
+        // $channelId = $config->youtube;
+        $channelId = 'UC9sWQoZ0Ww6phxnRoSGYmPQ';
+        $videoLists = $this->_videoLists($channelId);
+        return view('site.youtube.index', [
+            'title_postfix' => 'Nossos vídeos',
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
+            'config'        =>  $config,
+            'videoLists'    =>  $videoLists,
+            'tags'          =>  'crossfit em canoas, crossfit canoas, crossfit, treinamento funcional, academia',
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    public function watch($id)
+    {
+        $config = Config::get()->first();
+        // $channelId = $config->youtube;
+        $channelId = 'UC9sWQoZ0Ww6phxnRoSGYmPQ';
+        $videoDateLists = $this->_videoListsOrder($channelId,'date');
+        $videoViewsLists = $this->_videoListsOrder($channelId,'viewCount');
+        $singleVideo = $this->_singleVideo($id);
+        return view('site.youtube.watch', [
+            'title_postfix' =>  $singleVideo->items[0]->snippet->title,
+            'img_jarallax'  =>  'crossfit-canoas-home-1.jpg',
+            'config'        =>  $config,
+            'videoDateLists'    =>  $videoDateLists,
+            'videoViewsLists'    =>  $videoViewsLists,
+            'singleVideo'   =>  $singleVideo,
+            'tags'          =>  'crossfit em canoas, crossfit canoas, crossfit, treinamento funcional, academia',
+            'menu'          =>  $this->menu(),
+        ]);
+    }
+    // We will get search result here
+    protected function _videoLists($channelId)
+    {
+        $order = 'date';
+        $part = 'snippet';
+        $country = 'BD';
+        $apiKey = config('services.youtube.api_key');
+        $maxResults = 6;
+        $youTubeEndPoint = config('services.youtube.search_endpoint');
+        $type = 'video'; // You can select any one or all, we are getting only videos
+
+        $url = "$youTubeEndPoint?regionCode=$country&order=$order&channelId=$channelId&part=$part&maxResults=$maxResults&type=$type&key=$apiKey";
+        $response = Http::get($url);
+        $results = json_decode($response);
+        // echo '<pre>';
+        // print_r($results);
+        // exit;
+        // // We will create a json file to see our response
+        // File::put(storage_path() . '/app/public/results.json', $response->body());
+        return $results;
+    }
+    // We will get search result here
+    protected function _videoListsOrder($channelId,$order)
+    {
+ 
+        $part = 'snippet';
+        $country = 'BD';
+        $apiKey = config('services.youtube.api_key');
+        $maxResults = 4;
+        $youTubeEndPoint = config('services.youtube.search_endpoint');
+        $type = 'video'; // You can select any one or all, we are getting only videos
+
+        $url = "$youTubeEndPoint?regionCode=$country&order=$order&channelId=$channelId&part=$part&maxResults=$maxResults&type=$type&key=$apiKey";
+        $response = Http::get($url);
+        $results = json_decode($response);
+        // echo '<pre>';
+        // print_r($results);
+        // exit;
+        // // We will create a json file to see our response
+        // File::put(storage_path() . '/app/public/results.json', $response->body());
+        return $results;
+    }
+
+    protected function _singleVideo($id)
+    {
+        $apiKey = config('services.youtube.api_key');
+        $part = 'snippet';
+        $url = "https://www.googleapis.com/youtube/v3/videos?part=$part&id=$id&key=$apiKey";
+        $response = Http::get($url);
+        $results = json_decode($response);
+
+        // Will create a json file to see our single video details
+        File::put(storage_path() . '/app/public/single.json', $response->body());
+        return $results;
     }
 }

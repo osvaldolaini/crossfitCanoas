@@ -170,7 +170,7 @@
                             @endforeach
                         </aside>
                         <aside class="single_sidebar_widget" style="background-color: transparent !important;">
-                            @include('site.partials.adsPlayer')
+                            @include('site.partials.adsNews')
                         </aside>
                         <aside class="single_sidebar_widget newsletter_widget">
                             <h4 class="widget_title">Newsletter</h4>
