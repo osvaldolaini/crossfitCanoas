@@ -44,6 +44,10 @@ class subscribers extends Mailable
         $socialMedia = $this->socialMedia;
         $subscribers = $this->subscribers;
 
+        $instagram ='';
+        $facebook ='';
+        $youtube ='';
+
         foreach($socialMedia as $media){
             if($media->icon == 'fa-instagram'){
                 $instagram = '<td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px">
@@ -51,10 +55,6 @@ class subscribers extends Mailable
                         <img title="Instagram" src="'.url("storage/images/email/instagram-1.png").'" alt="crossfit-canoas-instagram" width="32" height="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
                     </a>
                 </td>';
-                
-                break;
-            }else{
-                $instagram ='';
             }
             if($media->icon == 'fa-facebook'){
                 $facebook = '<td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px">
@@ -62,10 +62,6 @@ class subscribers extends Mailable
                         <img title="Facebook" src="'.url("storage/images/email/facebook-1.png").'" alt="crossfit-canoas-facebook" width="32" height="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
                     </a>
                 </td>';
-                
-                break;
-            }else{
-                $facebook ='';
             }
             if($media->icon == 'fa-youtube'){
                 $youtube = '<td valign="top" align="center" style="padding:0;Margin:0;padding-right:20px">
@@ -73,10 +69,6 @@ class subscribers extends Mailable
                         <img title="Youtube" src="'.url("storage/images/email/youtube.png").'" alt="crossfit-canoas-youtube" width="32" height="32" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic">
                     </a>
                 </td>';
-                
-                break;
-            }else{
-                $youtube ='';
             }
         }
 
