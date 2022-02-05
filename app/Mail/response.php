@@ -49,7 +49,7 @@ class response extends Mailable
                     </a>
                 </td>';
             }else{
-                $instagram ='';
+                $instagram =$media->icon;
             }
             if($media->icon == 'fa-facebook'){
                 $facebook = '<td>
@@ -58,7 +58,7 @@ class response extends Mailable
                     </a>
                 </td>';
             }else{
-                $facebook ='';
+                $facebook =$media->icon;
             }
         }
         $this->subject($email->subject);
