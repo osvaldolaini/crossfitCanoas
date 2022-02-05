@@ -13,7 +13,7 @@
                         {{ $config->addresses->first()->district }},
                         {{ $config->addresses->first()->city }} - {{ $config->addresses->first()->state }}<br>
                         <i class="fa fa-phone fa-lg"></i>{{ $config->phone }}<br>
-                        <i class="fab fa-whatsapp fa-lg"></i>{{ $config->whats }}<br>
+                        <i class="fab fa-whatsapp fa-lg"></i>{{ $config->cellphone }}<br>
                         <i class="fa fa-envelope fa-lg"></i> {{ $config->email }}<br>
                     </p>
                     <div class="hr-white my-3"></div>
