@@ -74,7 +74,7 @@ class subscribers extends Mailable
 
         $this->subject($this->content->title);
         foreach ($subscribers as $subscriber) {
-            $this->to([$subscriber->email],'no-replay');
+            $this->bcc([$subscriber->email],'no-replay');
             $this->view('admin.email.subscriber',[
                 'title_postfix' => $this->content->title,
                 'config'        => $config,
