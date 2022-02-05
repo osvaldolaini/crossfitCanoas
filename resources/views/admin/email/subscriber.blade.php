@@ -111,7 +111,7 @@ a[x-apple-data-detectors] {
                             </table></td>
                             </tr>
                         </table>
-                        <table class="es-content es-visible-simple-html-only" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+                        <table class="es-content es-visible-simple-html-only" cellspacing="0" cellpadding="0" align="center" bgcolor="#343a40" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:#343a40">
                             <tr style="border-collapse:collapse">
                             <td class="es-stripe-html" align="center" style="padding:0;Margin:0">
                             <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#343a40;width:600px" cellspacing="0" cellpadding="0" bgcolor="#343a40" align="center">
