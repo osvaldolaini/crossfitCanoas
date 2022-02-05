@@ -12,7 +12,7 @@
                     <img width="30%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
                     <!--<h4 style="margin: 0; padding: 0; font-family:arial; color:#ffffff;" >{{$config->title}}</h4>-->
                 </td>
-            </tr> 
+            </tr>  
             <tr>
                 <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">

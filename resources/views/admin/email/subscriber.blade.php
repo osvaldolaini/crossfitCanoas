@@ -140,8 +140,8 @@ a[x-apple-data-detectors] {
                                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                         <tr style="border-collapse:collapse">
                                                             <td align="center" style="padding:0;Margin:0;padding-top:10px">
-                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#a8cf45;font-size:16px">
-                                                                    Tem novidade no seu site de engenharia favorito
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#fd7e14;font-size:16px">
+                                                                    Tem novidade no seu site de crossfit favorito
                                                                 </p>
                                                             </td>
                                                         </tr>
@@ -159,7 +159,7 @@ a[x-apple-data-detectors] {
                                                     <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                         <tr style="border-collapse:collapse">
                                                             <td align="center" style="padding:0;Margin:0;padding-top:10px">
-                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#a8cf45;font-size:16px">
+                                                                <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:roboto, 'helvetica neue', helvetica, arial, sans-serif;line-height:24px;color:#fd7e14;font-size:16px">
                                                                     {{$title}}
                                                                 </p>
                                                             </td>
@@ -202,8 +202,8 @@ a[x-apple-data-detectors] {
                                                                         <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                                                                                 <tr style="border-collapse:collapse">
                                                                                     <td align="center" style="padding:0;Margin:0">
-                                                                                        <span class="es-button-border" style="border-style:solid;border-color:#333333;background:#a8cf45;border-width:2px;display:inline-block;border-radius:0px;width:auto">
-                                                                                            <a href="{{$link}}" class="es-button es-button-1" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#ffffff;font-size:15px;border-style:solid;border-color:#a8cf45;border-width:15px 35px;display:inline-block;background:#a8cf45;border-radius:0px;font-family:Arial, sans-serif;font-weight:bold;font-style:normal;line-height:18px;width:auto;text-align:center">
+                                                                                        <span class="es-button-border" style="border-style:solid;border-color:#333333;background:#fd7e14;border-width:2px;display:inline-block;border-radius:0px;width:auto">
+                                                                                            <a href="{{$link}}" class="es-button es-button-1" target="_blank" style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#ffffff;font-size:15px;border-style:solid;border-color:#fd7e14;border-width:15px 35px;display:inline-block;background:#fd7e14;border-radius:0px;font-family:Arial, sans-serif;font-weight:bold;font-style:normal;line-height:18px;width:auto;text-align:center">
                                                                                                 SAIBA MAIS
                                                                                             </a>
                                                                                         </span>

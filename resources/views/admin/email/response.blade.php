@@ -8,31 +8,31 @@
     <body style="margin: 0; padding: 0;">
         <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
             <tr>
-                <td align="center" bgcolor="#89ad64" style="padding: 20px 0 20px 0;">
-                    <img width="10%" src="{{url('storage/images/email/logo.png')}}" alt="assgapa"  style="display: block;" />
-                    <h4 style="margin: 0; padding: 0; font-family:arial; color:#fff;" >{{$config->title}}</h4>
+                <td align="center" bgcolor="#fd7e14" style="padding: 20px 0 20px 0;">
+                    <img width="30%" src="{{url('storage/images/site/logo.png')}}" alt="{{$config->slug}}"  style="display: block;" />
+                    <!--<h4 style="margin: 0; padding: 0; font-family:arial; color:#ffffff;" >{{$config->title}}</h4>-->
                 </td>
-            </tr>
+            </tr>  
             <tr>
                 <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                                <td width="260" valign="top">
-                                    <table cellpadding="0" cellspacing="0" width="100%">
-                                        <tr>
-                                            <td style="padding: 10px 0 0 0; font-family:arial;">
+                        <tr>
+                            <td width="260" valign="top">
+                                <table cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 10px 0 0 0; font-family:arial;">
 
-                                               {!!$email->answer!!}
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
+                                           {!!$email->answer!!}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
                        </table>
                    </td>
             </tr>
             <tr>
-                <td bgcolor="#89ad64" style="padding: 20px 30px 20px 30px;">
+                <td bgcolor="#fd7e14" style="padding: 20px 30px 20px 30px;">
                     <table cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td width="75%">
@@ -41,20 +41,12 @@
                             <td align="right">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <!--<td>
-                                            <a href="https://www.instagram.com/cssgapa" target="_BLANK">
-                                                <img src="{{url('storage/images/email/instagram-1.png')}}" alt="Instagram" width="38" height="38" style="display: block;" border="0" />
-                                            </a>
-                                        </td>
+                                        {!!$instagram!!}
+                                        <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+                                        {!!$facebook!!}
                                         <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                         <td>
-                                            <a href="http://www.facebook.com/cssgapaoficial" target="_BLANK">
-                                                <img src="{{url('storage/images/email/facebook-1.png')}}" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
-                                            </a>
-                                        </td>-->
-                                        <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
-                                        <td>
-                                            <a href="https://www.conceptum.com.br" target="_BLANK">
+                                            <a href="https://www.crossfitcanoas.com.br/" target="_BLANK">
                                                 <img src="{{url('storage/images/email/domain.png')}}" alt="dominio" width="38" height="38" style="display: block;" border="0" />
                                             </a>
                                         </td>
@@ -68,4 +60,6 @@
        </table>
    </body>
 </html>
+
+
 
